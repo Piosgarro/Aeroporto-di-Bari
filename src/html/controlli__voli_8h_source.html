@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AeroportodiBari-Gruppo18:  File sorgente controlli_voli.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">AeroportodiBari-Gruppo18
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">controlli_voli.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="controlli__voli_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef CONTROLLI_VOLI_H_</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define CONTROLLI_VOLI_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data_8h.html">data.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ora_8h.html">ora.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="volo_8h.html">volo.h</a>&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#aa0bddb55afe75387da3ccc67693fe8b2">controllo_id_volo</a>(<span class="keywordtype">char</span> id_volo[]);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#a7ce319a05aac763f2ad7a0e77c6b9b7c">id_volo_inserito</a>(<span class="keywordtype">char</span> id_volo[], <span class="keywordtype">int</span> numero_voli, <a class="code" href="structvolo.html">volo</a> voli[]);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#a8b5ec27b420bb8eefdcca59435dd3858">controllo_Stringa2_volo</a>(<span class="keywordtype">char</span> stringa2[]);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#a5b4d8953388f1d992befb5bd1865bc18">controllo_Stringa_volo</a>(<span class="keywordtype">char</span> stringa[]);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#a2100bf3326599ec9619d57c31a882018">controllo_posti</a>(<span class="keywordtype">char</span> posti1[],<span class="keywordtype">int</span>* posti);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#a3e8f394de0a76d483ec7c56f2290029f">controllo_giorno_di_volo</a>(<span class="keywordtype">char</span> giorno1[],<span class="keywordtype">int</span>* giorno_di_volo);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#a8ceb57a962fb3a2cddce71b8f9ab7c75">controllo_mese_di_volo</a>(<span class="keywordtype">char</span> mese1[],<span class="keywordtype">int</span>* mese_di_volo);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#a2901afa08f2641c484e840f1aded836e">controllo_anno_di_volo</a>(<span class="keywordtype">char</span> anno1[],<span class="keywordtype">int</span>* anno_di_volo);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#a649be08b9c68ee778b2ef97df90fa41e">data_volo_corretta_1</a>(<a class="code" href="structdata.html">data</a> giorno_volo);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#a4c7e9fa7e1a44d808e63a3c5d06c34b0">data_volo_corretta_2</a>(<a class="code" href="structdata.html">data</a> giorno_volo,<span class="keywordtype">int</span> giorno_sistema,<span class="keywordtype">int</span> mese_sistema,<span class="keywordtype">int</span> anno_sistema);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#a3af577ee3cc5a55a03206d1e2880b6b3">controllo_ora_e_minuti</a>(<span class="keywordtype">char</span> ora_e_minuti[], <span class="keywordtype">int</span>* ora_e_minuti2);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#a59d29298b58134ab72b24f4a7c483c65">ora_di_partenza_corretta</a>(<a class="code" href="structora.html">ora</a> ora_partenza);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#a5ef9c9ccdaabad554a67521e21828f51">ora_di_arrivo_corretta</a>(<a class="code" href="structora.html">ora</a> ora_partenza,<a class="code" href="structora.html">ora</a> ora_arrivo);</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__voli_8h.html#a8d47df4ca5e744c163a9019e832ab15f">calcola_durata</a>(<a class="code" href="structora.html">ora</a> ora_partenza,<a class="code" href="structora.html">ora</a> ora_arrivo);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONTROLLI_VOLI_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="controlli__voli_8h_html_a649be08b9c68ee778b2ef97df90fa41e"><div class="ttname"><a href="controlli__voli_8h.html#a649be08b9c68ee778b2ef97df90fa41e">data_volo_corretta_1</a></div><div class="ttdeci">int data_volo_corretta_1(data giorno_volo)</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:420</div></div>
+<div class="ttc" id="controlli__voli_8h_html_a2100bf3326599ec9619d57c31a882018"><div class="ttname"><a href="controlli__voli_8h.html#a2100bf3326599ec9619d57c31a882018">controllo_posti</a></div><div class="ttdeci">int controllo_posti(char posti1[], int *posti)</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:227</div></div>
+<div class="ttc" id="structora_html"><div class="ttname"><a href="structora.html">ora</a></div><div class="ttdef"><b>Definition:</b> ora.h:11</div></div>
+<div class="ttc" id="ora_8h_html"><div class="ttname"><a href="ora_8h.html">ora.h</a></div></div>
+<div class="ttc" id="data_8h_html"><div class="ttname"><a href="data_8h.html">data.h</a></div></div>
+<div class="ttc" id="controlli__voli_8h_html_a3af577ee3cc5a55a03206d1e2880b6b3"><div class="ttname"><a href="controlli__voli_8h.html#a3af577ee3cc5a55a03206d1e2880b6b3">controllo_ora_e_minuti</a></div><div class="ttdeci">int controllo_ora_e_minuti(char ora_e_minuti[], int *ora_e_minuti2)</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:532</div></div>
+<div class="ttc" id="controlli__voli_8h_html_a8ceb57a962fb3a2cddce71b8f9ab7c75"><div class="ttname"><a href="controlli__voli_8h.html#a8ceb57a962fb3a2cddce71b8f9ab7c75">controllo_mese_di_volo</a></div><div class="ttdeci">int controllo_mese_di_volo(char mese1[], int *mese_di_volo)</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:327</div></div>
+<div class="ttc" id="controlli__voli_8h_html_a5b4d8953388f1d992befb5bd1865bc18"><div class="ttname"><a href="controlli__voli_8h.html#a5b4d8953388f1d992befb5bd1865bc18">controllo_Stringa_volo</a></div><div class="ttdeci">int controllo_Stringa_volo(char stringa[])</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:167</div></div>
+<div class="ttc" id="controlli__voli_8h_html_a4c7e9fa7e1a44d808e63a3c5d06c34b0"><div class="ttname"><a href="controlli__voli_8h.html#a4c7e9fa7e1a44d808e63a3c5d06c34b0">data_volo_corretta_2</a></div><div class="ttdeci">int data_volo_corretta_2(data giorno_volo, int giorno_sistema, int mese_sistema, int anno_sistema)</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:478</div></div>
+<div class="ttc" id="controlli__voli_8h_html_a7ce319a05aac763f2ad7a0e77c6b9b7c"><div class="ttname"><a href="controlli__voli_8h.html#a7ce319a05aac763f2ad7a0e77c6b9b7c">id_volo_inserito</a></div><div class="ttdeci">int id_volo_inserito(char id_volo[], int numero_voli, volo voli[])</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:79</div></div>
+<div class="ttc" id="controlli__voli_8h_html_a59d29298b58134ab72b24f4a7c483c65"><div class="ttname"><a href="controlli__voli_8h.html#a59d29298b58134ab72b24f4a7c483c65">ora_di_partenza_corretta</a></div><div class="ttdeci">int ora_di_partenza_corretta(ora ora_partenza)</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:572</div></div>
+<div class="ttc" id="controlli__voli_8h_html_a8d47df4ca5e744c163a9019e832ab15f"><div class="ttname"><a href="controlli__voli_8h.html#a8d47df4ca5e744c163a9019e832ab15f">calcola_durata</a></div><div class="ttdeci">int calcola_durata(ora ora_partenza, ora ora_arrivo)</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:657</div></div>
+<div class="ttc" id="volo_8h_html"><div class="ttname"><a href="volo_8h.html">volo.h</a></div></div>
+<div class="ttc" id="controlli__voli_8h_html_a2901afa08f2641c484e840f1aded836e"><div class="ttname"><a href="controlli__voli_8h.html#a2901afa08f2641c484e840f1aded836e">controllo_anno_di_volo</a></div><div class="ttdeci">int controllo_anno_di_volo(char anno1[], int *anno_di_volo)</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:376</div></div>
+<div class="ttc" id="controlli__voli_8h_html_a5ef9c9ccdaabad554a67521e21828f51"><div class="ttname"><a href="controlli__voli_8h.html#a5ef9c9ccdaabad554a67521e21828f51">ora_di_arrivo_corretta</a></div><div class="ttdeci">int ora_di_arrivo_corretta(ora ora_partenza, ora ora_arrivo)</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:606</div></div>
+<div class="ttc" id="controlli__voli_8h_html_a3e8f394de0a76d483ec7c56f2290029f"><div class="ttname"><a href="controlli__voli_8h.html#a3e8f394de0a76d483ec7c56f2290029f">controllo_giorno_di_volo</a></div><div class="ttdeci">int controllo_giorno_di_volo(char giorno1[], int *giorno_di_volo)</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:274</div></div>
+<div class="ttc" id="controlli__voli_8h_html_aa0bddb55afe75387da3ccc67693fe8b2"><div class="ttname"><a href="controlli__voli_8h.html#aa0bddb55afe75387da3ccc67693fe8b2">controllo_id_volo</a></div><div class="ttdeci">int controllo_id_volo(char id_volo[])</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:22</div></div>
+<div class="ttc" id="controlli__voli_8h_html_a8b5ec27b420bb8eefdcca59435dd3858"><div class="ttname"><a href="controlli__voli_8h.html#a8b5ec27b420bb8eefdcca59435dd3858">controllo_Stringa2_volo</a></div><div class="ttdeci">int controllo_Stringa2_volo(char stringa2[])</div><div class="ttdef"><b>Definition:</b> controlli_voli.c:107</div></div>
+<div class="ttc" id="structdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> data.h:11</div></div>
+<div class="ttc" id="structvolo_html"><div class="ttname"><a href="structvolo.html">volo</a></div><div class="ttdef"><b>Definition:</b> volo.h:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

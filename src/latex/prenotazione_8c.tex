@@ -1,0 +1,447 @@
+\hypertarget{prenotazione_8c}{}\section{Riferimenti per il file prenotazione.\+c}
+\label{prenotazione_8c}\index{prenotazione.\+c@{prenotazione.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}controlli\+\_\+passeggeri.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}controlli\+\_\+voli.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}passeggero.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}volo.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}prenotazione.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}costanti.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data\+\_\+di\+\_\+iscrizione.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}svuota\+\_\+buffer.\+h\char`\"{}}\newline
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{prenotazione_8c_ab0b8c6231c4bc52a30f332725dada5df}{numero\+\_\+delle\+\_\+prenotazioni} ()
+\item 
+int \hyperlink{prenotazione_8c_a77eda33f0c182332720ccb827069ee88}{caricamento\+\_\+prenotazioni} (\hyperlink{structprenotazione}{prenotazione} prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+prenotazioni)
+\item 
+int \hyperlink{prenotazione_8c_a55e01f491b93d239ed2ac22b89da6784}{salvataggio\+\_\+su\+\_\+file\+\_\+prenotazioni} (\hyperlink{structprenotazione}{prenotazione} prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+prenotazioni)
+\item 
+int \hyperlink{prenotazione_8c_a342cf502cce4e417e221054cd456c355}{visualizza\+\_\+prenotazioni} (\hyperlink{structprenotazione}{prenotazione} prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+prenotazioni)
+\item 
+int \hyperlink{prenotazione_8c_acadb90a5c305e2578d6ddc27796df202}{visualizza\+\_\+una\+\_\+prenotazione} (\hyperlink{structprenotazione}{prenotazione} prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+prenotazioni, int indice\+\_\+prenotazione)
+\item 
+int \hyperlink{prenotazione_8c_ab14aeb37d543a6dd9ecc258b90412fc3}{controllo\+\_\+prenotazione} (\hyperlink{structprenotazione}{prenotazione} prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+prenotazioni, \hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int indice\+\_\+utente, \hyperlink{structvolo}{volo} volo\+\_\+inserito)
+\item 
+int \hyperlink{prenotazione_8c_a7d998e051c7e5e96e5ba015593caa09f}{inserisci\+\_\+nuova\+\_\+prenotazione} (\hyperlink{structprenotazione}{prenotazione} prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+prenotazioni, \hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+passeggeri, \hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\item 
+int \hyperlink{prenotazione_8c_a65c6b05a35d30b633ffc2643fff5923f}{modifica\+\_\+prenotazione} (\hyperlink{structprenotazione}{prenotazione} prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+prenotazioni, \hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+passeggeri, \hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\item 
+int \hyperlink{prenotazione_8c_a2abf8dede3a245cec95394cfcf8feb6a}{elimina\+\_\+prenotazione} (\hyperlink{structprenotazione}{prenotazione} prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+prenotazioni)
+\item 
+int \hyperlink{prenotazione_8c_a8bf4511e97ab535f7d19f914533f30e7}{imbarco} (\hyperlink{structprenotazione}{prenotazione} prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+prenotazioni, \hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli}, int n)
+\item 
+int \hyperlink{prenotazione_8c_a9809682ac89a0815914953b8261ce876}{check\+\_\+in} (\hyperlink{structprenotazione}{prenotazione} prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+di\+\_\+prenotazioni, \hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int \hyperlink{passeggero_8h_a3d73ed6aca33f19e3cf49bc2dff530f3}{numero\+\_\+di\+\_\+passeggeri}, \hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\item 
+int \hyperlink{prenotazione_8c_adab458282af57cc5393fa13bb2ab3d2a}{ricerca\+\_\+per\+\_\+utente} (\hyperlink{structprenotazione}{prenotazione} prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+di\+\_\+prenotazioni, \hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int indice\+\_\+utente)
+\item 
+int \hyperlink{prenotazione_8c_a881fe2fe856c80da77e82956950fd438}{ricerca\+\_\+per\+\_\+volo} (\hyperlink{structprenotazione}{prenotazione} prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]}, char id\+\_\+volo\mbox{[}$\,$\mbox{]}, int numero\+\_\+di\+\_\+prenotazioni)
+\item 
+int \hyperlink{prenotazione_8c_ab311623e5ee8cc5f3448783aca2c7fcd}{ricerca\+\_\+prenotazioni} (\hyperlink{structprenotazione}{prenotazione} prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+di\+\_\+prenotazioni, \hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+passeggeri, \hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+\begin{DoxyAuthor}{Autori}
+Sgarro Vincenzo Pio, Sokoli Afrim 
+\end{DoxyAuthor}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{prenotazione_8c_a77eda33f0c182332720ccb827069ee88}\label{prenotazione_8c_a77eda33f0c182332720ccb827069ee88}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!caricamento\+\_\+prenotazioni@{caricamento\+\_\+prenotazioni}}
+\index{caricamento\+\_\+prenotazioni@{caricamento\+\_\+prenotazioni}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{caricamento\+\_\+prenotazioni()}{caricamento\_prenotazioni()}}
+{\footnotesize\ttfamily int caricamento\+\_\+prenotazioni (\begin{DoxyParamCaption}\item[{\hyperlink{structprenotazione}{prenotazione}}]{prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+prenotazioni }\end{DoxyParamCaption})}
+
+Questa funzione carica i dati dal file passeggeri all\textquotesingle{}array di struct prenotazione\+\_\+persona per permettere di lavorare su quei dati. \begin{DoxyPrecond}{Precondizione}
+numero\+\_\+prenotazioni deve contenere il numero effettivo delle prenotazioni 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+L\textquotesingle{}array di struct prenotazione\+\_\+persona conterra\textquotesingle{} tutti i dati delle prenotazioni. 
+\end{DoxyPostcond}
+Leggo tutti i dati delle prenotazioni dal file e li salvo sull array di struct \mbox{\Hypertarget{prenotazione_8c_a9809682ac89a0815914953b8261ce876}\label{prenotazione_8c_a9809682ac89a0815914953b8261ce876}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!check\+\_\+in@{check\+\_\+in}}
+\index{check\+\_\+in@{check\+\_\+in}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{check\+\_\+in()}{check\_in()}}
+{\footnotesize\ttfamily int check\+\_\+in (\begin{DoxyParamCaption}\item[{\hyperlink{structprenotazione}{prenotazione}}]{prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+prenotazioni,  }\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+passeggeri,  }\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di effettuare il check-\/in di una prenotazione esistente. Inizialmente viene chiesto all\textquotesingle{}utente di inserire il numero del passaporto di un passeggero. Successivamente viene mostrato all\textquotesingle{}utente tutte le prenotazioni del passeggero scelto, cosi da sceglierne una di cui effettuare il check-\/in. Infine l\textquotesingle{}utente inserira\textquotesingle{} la prenotazione di quel passeggero tra le presenti, e il check-\/in sara\textquotesingle{} completato \begin{DoxyPrecond}{Precondizione}
+prenotazione\+\_\+persona array di struct deve contenere tutti i dati delle prenotazioni 
+
+numero\+\_\+di\+\_\+prenotazioni deve contenere il numero delle prenotazioni 
+
+persona array di struct deve contenere tutti i dati dei passeggeri 
+
+numero\+\_\+di\+\_\+passeggeri deve contenere il numero dei passeggeri 
+
+voli array di struct deve contenere tutti i dati dei voli 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero dei voli 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Il check-\/in della prenotazione scelta verra\textquotesingle{} effettuato 
+\end{DoxyPostcond}
+Variabile che conterra\textquotesingle{} 1 se il passaporto inserito e\textquotesingle{} corretto,0 altrimenti.
+
+Vettore utilizzato per contenere le prenotazioni di un determinato passeggero
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice di ogni passeggero
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice di ogni prenotazione
+
+Variabile che conterra\textquotesingle{} tutte le prenotazioni di un determinato passeggero
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice di ogni prenotazione effettuata da un determinato passeggero
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} tra le prenotazioni esistenti e non e\textquotesingle{} stato gia\textquotesingle{} effettuato il check-\/in, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice della prenotazione di cui effettuare il check-\/in
+
+Variabile che conterra\textquotesingle{} 1 se il passaporto inserito esiste, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se un determinato passeggero ha effettuato delle prenotazioni, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice del passeggero di cui si vogliono visualizzare le prenotazioni
+
+Variabile di tipo passeggero che conterra\textquotesingle{} il passaporto di un passeggero
+
+Variabile che conterra\textquotesingle{} un posto assegnato su un volo, una volta effettuato il check-\/in
+
+Ciclo che permette all\textquotesingle{}utente di inserire un passaporto finche\textquotesingle{} non inserisce un passaporto valido ed esistente
+
+Controllo se ci sono prenotazioni per quel passeggero selezionato, e le visualizzo
+
+Ogni volta che trovo una prenotazione, incremento un contatore che mi servira\textquotesingle{} in seguito
+
+Decremento di 1 la scelta inserita dall\textquotesingle{}utente per risalire all\textquotesingle{}indice di quella prenotazione
+
+Oltre al controllo del range delle prenotazioni esistenti, controllo anche se una prenotazione e\textquotesingle{} stata eliminata
+
+Incremento k di 1 per risalire alla prenotazione inserita precedentemente, dato che prima l\textquotesingle{}avevo decrementata per risalire all\textquotesingle{}indice
+
+Inoltre controllo se l\textquotesingle{}utente inserisce una prenotazione valida per quel passeggero e se e\textquotesingle{} stato gia\textquotesingle{} effettuato il check-\/ in della prenotazione scelta
+
+Una volta che tutti i dati sono corretti, imposto il valore del check-\/in a 1 \mbox{\Hypertarget{prenotazione_8c_ab14aeb37d543a6dd9ecc258b90412fc3}\label{prenotazione_8c_ab14aeb37d543a6dd9ecc258b90412fc3}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!controllo\+\_\+prenotazione@{controllo\+\_\+prenotazione}}
+\index{controllo\+\_\+prenotazione@{controllo\+\_\+prenotazione}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{controllo\+\_\+prenotazione()}{controllo\_prenotazione()}}
+{\footnotesize\ttfamily int controllo\+\_\+prenotazione (\begin{DoxyParamCaption}\item[{\hyperlink{structprenotazione}{prenotazione}}]{prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+prenotazioni,  }\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{indice\+\_\+utente,  }\item[{\hyperlink{structvolo}{volo}}]{volo\+\_\+inserito }\end{DoxyParamCaption})}
+
+Questa funzione controlla se la prenotazione inserita dall\textquotesingle{}utente per un determinato passeggero, e\textquotesingle{} stata gia\textquotesingle{} effettuata. Inizialmente scorro tutte le prenotazioni presenti, una volta trovato il passeggero inserito dall\textquotesingle{}utente, controllo se la prenotazione di quell\textquotesingle{}utente per quel volo e\textquotesingle{} stata gia\textquotesingle{} effettuata \begin{DoxyPrecond}{Precondizione}
+prenotazione\+\_\+persona array di struct deve contenere tutti i dati delle prenotazioni 
+
+numero\+\_\+prenotazioni deve contenere il numero delle prenotazioni 
+
+persona deve contenere l\textquotesingle{}indice del passeggero di cui si vogliono controllare le prenotazioni 
+
+indice\+\_\+utente deve contenere l\textquotesingle{}indice del passeggero per cui si vogliono controllare le prenotazioni 
+
+volo\+\_\+inserito deve contenere il volo per cui si vuole effettuare una prenotazione 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Prenotazione selezionata dall\textquotesingle{}utente per quel passeggero, in qualunque caso. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{prenotazione_8c_a2abf8dede3a245cec95394cfcf8feb6a}\label{prenotazione_8c_a2abf8dede3a245cec95394cfcf8feb6a}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!elimina\+\_\+prenotazione@{elimina\+\_\+prenotazione}}
+\index{elimina\+\_\+prenotazione@{elimina\+\_\+prenotazione}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{elimina\+\_\+prenotazione()}{elimina\_prenotazione()}}
+{\footnotesize\ttfamily int elimina\+\_\+prenotazione (\begin{DoxyParamCaption}\item[{\hyperlink{structprenotazione}{prenotazione}}]{prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+prenotazioni }\end{DoxyParamCaption})}
+
+Questa funzione permette di eliminare una prenotazione. Inizialmente viene controllato che l\textquotesingle{}id della prenotazione da eliminare e\textquotesingle{} stato inserito corretamente. Infine vengono eliminati i dati della prenotazione. \begin{DoxyPrecond}{Precondizione}
+prenotazione\+\_\+persona array di struct deve contenere tutti i dati delle prenotazioni 
+
+numero\+\_\+prenotazioni deve contenere il numero delle prenotazioni 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+La prenotazione selezionata dall\textquotesingle{}utente verra\textquotesingle{} eliminata e i suoi dati non verranno visualizzati nell\textquotesingle{}array di struct. 
+\end{DoxyPostcond}
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} tra le prenotazioni esistenti, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice della prenotazione da eliminare
+
+Decremento di 1 la scelta inserita dall\textquotesingle{}utente per risalire all\textquotesingle{}indice di quella prenotazione
+
+Oltre al controllo del range delle prenotazioni esistenti, controllo anche se una prenotazione e\textquotesingle{} stata eliminata
+
+Imposto il valore del check-\/in della prenotazione da eliminare a 2, in modo da non farlo visualizzare \mbox{\Hypertarget{prenotazione_8c_a8bf4511e97ab535f7d19f914533f30e7}\label{prenotazione_8c_a8bf4511e97ab535f7d19f914533f30e7}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!imbarco@{imbarco}}
+\index{imbarco@{imbarco}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{imbarco()}{imbarco()}}
+{\footnotesize\ttfamily int imbarco (\begin{DoxyParamCaption}\item[{\hyperlink{structprenotazione}{prenotazione}}]{prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+prenotazioni,  }\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllore se l\textquotesingle{}imbarco per un determinato volo e\textquotesingle{} concluso. Attraverso l\textquotesingle{}indice della prenotazione di cui si e\textquotesingle{} effettuato il check-\/in, si scorrono i voli finche\textquotesingle{} non si trova quel determinato volo. Una volta trovato il volo, si scorrono tutte le prenotazioni e ogni volta che si trova quel volo nelle prenotazioni, si incrementa un contatore di tutte le prenotazioni di quel volo di cui e\textquotesingle{} stato effettuato il check-\/in Una volta contati tutti i check-\/in effettuati per quel volo, si confronta questo numero con il numero dei posti di quel volo, e se sono uguali viene stampato il messaggio di imbarco completato \begin{DoxyPrecond}{Precondizione}
+prenotazione\+\_\+persona array di struct deve contenere tutti i dati delle prenotazioni 
+
+numero\+\_\+prenotazioni deve contenere il numero effettivo delle prenotazioni 
+
+voli array di struct deve contenere tutti i dati dei voli 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero effettivo dei voli 
+
+n deve contenere l\textquotesingle{}indice della prenotazione di cui si vuole effettuare il check-\/in 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Il messaggio che l\textquotesingle{}imbarco e\textquotesingle{} stato completato, altrimenti niente il contrario 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{prenotazione_8c_a7d998e051c7e5e96e5ba015593caa09f}\label{prenotazione_8c_a7d998e051c7e5e96e5ba015593caa09f}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!inserisci\+\_\+nuova\+\_\+prenotazione@{inserisci\+\_\+nuova\+\_\+prenotazione}}
+\index{inserisci\+\_\+nuova\+\_\+prenotazione@{inserisci\+\_\+nuova\+\_\+prenotazione}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{inserisci\+\_\+nuova\+\_\+prenotazione()}{inserisci\_nuova\_prenotazione()}}
+{\footnotesize\ttfamily int inserisci\+\_\+nuova\+\_\+prenotazione (\begin{DoxyParamCaption}\item[{\hyperlink{structprenotazione}{prenotazione}}]{prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+prenotazioni,  }\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+passeggeri,  }\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di inserire una nuova prenotazione. Inizialmente viene chiesto all\textquotesingle{}utente di inserire uno dei passeggeri presenti nel progetto. Successivamente viene chiesto all\textquotesingle{}utente l\textquotesingle{}id del volo a cui vuole prenotarsi,tra quelli disponibili. Infine vengono memorizzati i dati della nuova nell\textquotesingle{}ultima posizione dell\textquotesingle{}array di struct. \begin{DoxyPrecond}{Precondizione}
+prenotazione\+\_\+persona array di struct deve contenere tutti i dati delle prenotazioni 
+
+numero\+\_\+prenotazioni deve contenere il numero delle prenotazioni 
+
+persona array di struct deve contenere tutti i dati dei passeggeri 
+
+numero\+\_\+passeggeri deve contenere il numero dei passeggeri 
+
+voli array di struct deve contenere tutti i dati dei voli 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero dei voli 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati della nuova prenotazione verranno salvati nell\textquotesingle{}ultima posizione dell\textquotesingle{}array di struct prenotazione\+\_\+persona. 
+\end{DoxyPostcond}
+Variabile che conterra\textquotesingle{} il volo per cui si vuole effettuare una prenotazione
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}id del volo inserito esiste,0 altrimenti
+
+Variabile che conterra\textquotesingle{} 1 se la prenotazione non e\textquotesingle{} stata inserita in precedenza,0 altrimenti
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice delle\textquotesingle{}utente per cui si vuole effettuare una prenotazione
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} tra i passeggeri esistenti, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice di ogni volo
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}id del volo e\textquotesingle{} stato inserito correttamente,0 altrimenti
+
+Decremento di 1 la scelta inserita dall\textquotesingle{}utente per risalire all\textquotesingle{}indice di quel passeggero.
+
+Oltre al controllo del range dei passeggeri esistenti, controllo anche se un passeggero e\textquotesingle{} stato eliminato
+
+Scorrendo tutti i voli, se il volo inserito dall\textquotesingle{}utente e\textquotesingle{} presente nel file voli, vuol dire che esiste, quindi incremento il flag
+
+Ciclo che permette all\textquotesingle{}utente di inserire un id\+\_\+volo finche\textquotesingle{} non inserisce un id\+\_\+volo valido ed esistente. \mbox{\Hypertarget{prenotazione_8c_a65c6b05a35d30b633ffc2643fff5923f}\label{prenotazione_8c_a65c6b05a35d30b633ffc2643fff5923f}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!modifica\+\_\+prenotazione@{modifica\+\_\+prenotazione}}
+\index{modifica\+\_\+prenotazione@{modifica\+\_\+prenotazione}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{modifica\+\_\+prenotazione()}{modifica\_prenotazione()}}
+{\footnotesize\ttfamily int modifica\+\_\+prenotazione (\begin{DoxyParamCaption}\item[{\hyperlink{structprenotazione}{prenotazione}}]{prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+prenotazioni,  }\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+passeggeri,  }\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di modificare i dati di una prenotazione esistente. Inizialmente viene chiesto all\textquotesingle{}utente di inserire una delle prenotazioni presenti da modificare. Successivamente gli viene mostrato un secondo menu\textquotesingle{} dove vengono indicati i vari campi di quella prenotazione da modificare. Una volta modificato uno tra quei campi, la prenotazione scelta dall\textquotesingle{}utente verra\textquotesingle{} modificata. \begin{DoxyPrecond}{Precondizione}
+prenotazione\+\_\+persona array di struct deve contenere tutti i dati delle prenotazioni 
+
+numero\+\_\+prenotazioni deve contenere il numero delle prenotazioni 
+
+persona array di struct deve contenere tutti i dati dei passeggeri 
+
+numero\+\_\+passeggeri deve contenere il numero dei passeggeri 
+
+voli array di struct deve contenere tutti i dati dei voli 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero dei voli 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di una determinata prenotazione verranno modificati. 
+\end{DoxyPostcond}
+Variabile che conterra\textquotesingle{} il volo per cui si vuole modificare una prenotazione
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}id del volo inserito esiste,0 altrimenti
+
+Variabile che conterra\textquotesingle{} il nuovo indice dell\textquotesingle{}utente che avra\textquotesingle{} effettuato quella prenotazione.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice della prenotazione da modificare
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} tra le prenotazioni esistenti, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} tra i passeggeri esistenti, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice di ogni volo
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} la scelta inserita, relativa a quale campo si vuole modificare.
+
+Variabile usata per uscire dal ciclo
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}id del volo e\textquotesingle{} stato inserito correttamente,0 altrimenti
+
+Decremento di 1 la scelta inserita dall\textquotesingle{}utente per risalire all\textquotesingle{}indice di quella prenotazione
+
+Oltre al controllo del range delle prenotazioni esistenti, controllo anche se una prenotazione e\textquotesingle{} stata eliminata
+
+Decremento di 1 la scelta inserita dall\textquotesingle{}utente per risalire all\textquotesingle{}indice di quel passeggero
+
+Oltre al controllo del range dei passeggeri esistenti, controllo anche se un passeggero e\textquotesingle{} stato eliminato
+
+Il campo modificato dall\textquotesingle{}utente viene salvato in quella posizione dell\textquotesingle{}array di struct delle prenotazioni
+
+Scorrendo tutti i voli, se il volo inserito dall\textquotesingle{}utente e\textquotesingle{} presente nel file voli, vuol dire che esiste, quindi incremento il flag
+
+Ciclo che permette all\textquotesingle{}utente di inserire un id\+\_\+volo finche\textquotesingle{} non inserisce un id\+\_\+volo valido ed esistente.
+
+Il campo modificato dall\textquotesingle{}utente viene salvato in quella posizione dell\textquotesingle{}array di struct delle prenotazioni
+
+Se l\textquotesingle{}utente non inserisce una tra le scelte presenti nel menu\textquotesingle{}, dovra\textquotesingle{} inserire una nuova scelta \mbox{\Hypertarget{prenotazione_8c_ab0b8c6231c4bc52a30f332725dada5df}\label{prenotazione_8c_ab0b8c6231c4bc52a30f332725dada5df}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!numero\+\_\+delle\+\_\+prenotazioni@{numero\+\_\+delle\+\_\+prenotazioni}}
+\index{numero\+\_\+delle\+\_\+prenotazioni@{numero\+\_\+delle\+\_\+prenotazioni}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{numero\+\_\+delle\+\_\+prenotazioni()}{numero\_delle\_prenotazioni()}}
+{\footnotesize\ttfamily int numero\+\_\+delle\+\_\+prenotazioni (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Questa funzione permette di calcolare il numero delle prenotazioni aprendo il file e contando tutte le prenotazioni Viene chiamata ad ogni operazione fatta perchè se viene aggiunta una prenotazione, il numero delle prenotazioni deve essere aggiornato. \begin{DoxyPostcond}{Postcondizione}
+il numero delle prenotazioni presenti nel file prenotazioni. 
+\end{DoxyPostcond}
+Leggo tutti i dati delle prenotazioni e ogni volta incremento la i \mbox{\Hypertarget{prenotazione_8c_adab458282af57cc5393fa13bb2ab3d2a}\label{prenotazione_8c_adab458282af57cc5393fa13bb2ab3d2a}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!ricerca\+\_\+per\+\_\+utente@{ricerca\+\_\+per\+\_\+utente}}
+\index{ricerca\+\_\+per\+\_\+utente@{ricerca\+\_\+per\+\_\+utente}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{ricerca\+\_\+per\+\_\+utente()}{ricerca\_per\_utente()}}
+{\footnotesize\ttfamily int ricerca\+\_\+per\+\_\+utente (\begin{DoxyParamCaption}\item[{\hyperlink{structprenotazione}{prenotazione}}]{prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+prenotazioni,  }\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{indice\+\_\+utente }\end{DoxyParamCaption})}
+
+Questa funzione permette di cercare il passeggero inserito in precedenza dall\textquotesingle{}utente, controllando che abbia effettuato almeno una prenotazione tra quella inserite nel file. Inoltre una volta trovato quel passeggero tra le prenotazioni, verranno visualizzati i dati della sua prenotazione, o eventualmente delle prenotazioni che ha effettuato. \begin{DoxyPrecond}{Precondizione}
+prenotazione\+\_\+persona array di struct deve contenere tutti i dati delle prenotazioni 
+
+numero\+\_\+di\+\_\+prenotazioni deve contenere il numero delle prenotazioni 
+
+persona array di struct deve contenere tutti i dati dei passeggeri 
+
+indice\+\_\+utente deve contenere l\textquotesingle{}indice del passeggero inserito dall\textquotesingle{}utente per cui si vuole effettuare una ricerca sulle sue prenotazioni 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di quella o quelle prenotazioni(di quel passeggero) cercate, che saranno attraverso una funzione visualizzati all\textquotesingle{}utente. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{prenotazione_8c_a881fe2fe856c80da77e82956950fd438}\label{prenotazione_8c_a881fe2fe856c80da77e82956950fd438}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!ricerca\+\_\+per\+\_\+volo@{ricerca\+\_\+per\+\_\+volo}}
+\index{ricerca\+\_\+per\+\_\+volo@{ricerca\+\_\+per\+\_\+volo}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{ricerca\+\_\+per\+\_\+volo()}{ricerca\_per\_volo()}}
+{\footnotesize\ttfamily int ricerca\+\_\+per\+\_\+volo (\begin{DoxyParamCaption}\item[{\hyperlink{structprenotazione}{prenotazione}}]{prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]},  }\item[{char}]{id\+\_\+volo\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+prenotazioni }\end{DoxyParamCaption})}
+
+Questa funzione permette di cercare il volo inserito in precedenza dall\textquotesingle{}utente, controllando che si sia effettuata almeno una prenotazione tra quella inserite nel file. Inoltre una volta trovato quel volo tra le prenotazioni, verranno visualizzati i dati della prenotazione su quel volo, o eventualmente delle prenotazioni che si sono effettuate su di esso. \begin{DoxyPrecond}{Precondizione}
+prenotazione\+\_\+persona array di struct deve contenere tutti i dati delle prenotazioni 
+
+id\+\_\+volo deve contenere il volo inserito dall\textquotesingle{}utente per cui si vuole effettuare una ricerca sulle sue prenotazioni 
+
+numero\+\_\+di\+\_\+prenotazioni deve contenere il numero delle prenotazioni 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di quella o quelle prenotazioni(su quel volo) cercate, che saranno attraverso una funzione visualizzati all\textquotesingle{}utente. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{prenotazione_8c_ab311623e5ee8cc5f3448783aca2c7fcd}\label{prenotazione_8c_ab311623e5ee8cc5f3448783aca2c7fcd}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!ricerca\+\_\+prenotazioni@{ricerca\+\_\+prenotazioni}}
+\index{ricerca\+\_\+prenotazioni@{ricerca\+\_\+prenotazioni}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{ricerca\+\_\+prenotazioni()}{ricerca\_prenotazioni()}}
+{\footnotesize\ttfamily int ricerca\+\_\+prenotazioni (\begin{DoxyParamCaption}\item[{\hyperlink{structprenotazione}{prenotazione}}]{prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+prenotazioni,  }\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+passeggeri,  }\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di ricercare delle prenotazioni secondo un determinato criterio. Inizialmente viene mostrato all\textquotesingle{}utente un menu\textquotesingle{} dove vengono indicati i vari campi per i quali ricercare una prenotazione. Una volta selezionato uno tra i criteri da ricercare,verranno chiamate altre funzioni. \begin{DoxyPrecond}{Precondizione}
+prenotazione\+\_\+persona array di struct deve contenere tutti i dati delle prenotazioni 
+
+numero\+\_\+di\+\_\+prenotazioni deve contenere il numero delle prenotazioni 
+
+persona array di struct deve contenere tutti i dati dei passeggeri 
+
+numero\+\_\+passeggeri deve contenere il numero dei passeggeri 
+
+voli array di struct deve contenere tutti i dati dei voli 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero dei voli 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Attraverso altre funzioni presenti in questa funzione, verranno ricercate e successivamente visualizzate le prenotazioni, secondo un criterio inserito dall\textquotesingle{}utente. 
+\end{DoxyPostcond}
+Variabile che conterra\textquotesingle{} il volo per cui si vuole ricercare una prenotazione
+
+Variabile che conterra\textquotesingle{} 1 se il volo inserito e\textquotesingle{} esistente, 0 altrimenti
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice del passeggero di cui si vogliono visualizzare le prenotazioni
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} tra i passeggeri esistenti, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice di ogni volo
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} la scelta inserita, relativa a quale campo si vuole modificare.
+
+Variabile usata per uscire dal ciclo
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}id del volo e\textquotesingle{} stato inserito correttamente,0 altrimenti
+
+Variabile che conterra\textquotesingle{} 1 se il passeggero inserito ha effettuato almeno una prenotazione
+
+Variabile che conterra\textquotesingle{} 1 se sul volo inserito si e\textquotesingle{} effettuata almeno una prenotazione
+
+Ciclo che permette all\textquotesingle{}utente di inserire un passeggero finche\textquotesingle{} non inserisce un passeggero valido, esistente e ha effettuato almeno una prenotazione.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un volo finche\textquotesingle{} non inserisce un volo valido, esistente e sul quale si e\textquotesingle{} effettuata almeno una prenotazione.
+
+Se l\textquotesingle{}utente non inserisce una tra le scelte presenti nel menu\textquotesingle{}, dovra\textquotesingle{} inserire una nuova scelta \mbox{\Hypertarget{prenotazione_8c_a55e01f491b93d239ed2ac22b89da6784}\label{prenotazione_8c_a55e01f491b93d239ed2ac22b89da6784}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!salvataggio\+\_\+su\+\_\+file\+\_\+prenotazioni@{salvataggio\+\_\+su\+\_\+file\+\_\+prenotazioni}}
+\index{salvataggio\+\_\+su\+\_\+file\+\_\+prenotazioni@{salvataggio\+\_\+su\+\_\+file\+\_\+prenotazioni}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{salvataggio\+\_\+su\+\_\+file\+\_\+prenotazioni()}{salvataggio\_su\_file\_prenotazioni()}}
+{\footnotesize\ttfamily int salvataggio\+\_\+su\+\_\+file\+\_\+prenotazioni (\begin{DoxyParamCaption}\item[{\hyperlink{structprenotazione}{prenotazione}}]{prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+prenotazioni }\end{DoxyParamCaption})}
+
+Questa funzione salva i dati dall\textquotesingle{}array di struct prenotazione\+\_\+persona al file delle prenotazioni. Viene chiamata ogni volta che viene effettuata un\textquotesingle{}operazione, in modo da aggiornare costantemente il file delle prenotazioni e quindi i dati. \begin{DoxyPrecond}{Precondizione}
+numero\+\_\+prenotazioni deve contenere il numero effettivo delle prenotazioni 
+
+prenotazione\+\_\+persona deve contenere tutti i dati delle prenotazioni 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati delle prenotazioni verranno salvati sul file. 
+\end{DoxyPostcond}
+Scrivo tutti i dati presenti nell array di struct nel file, salvando quindi i dati. \mbox{\Hypertarget{prenotazione_8c_a342cf502cce4e417e221054cd456c355}\label{prenotazione_8c_a342cf502cce4e417e221054cd456c355}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!visualizza\+\_\+prenotazioni@{visualizza\+\_\+prenotazioni}}
+\index{visualizza\+\_\+prenotazioni@{visualizza\+\_\+prenotazioni}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{visualizza\+\_\+prenotazioni()}{visualizza\_prenotazioni()}}
+{\footnotesize\ttfamily int visualizza\+\_\+prenotazioni (\begin{DoxyParamCaption}\item[{\hyperlink{structprenotazione}{prenotazione}}]{prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+prenotazioni }\end{DoxyParamCaption})}
+
+Questa funzione permette di visualizzare tutte le prenotazioni presenti nel progetto. Vengono visualizzati tutte le prenotazioni,tranne quelle che sono state elimininate. \begin{DoxyPrecond}{Precondizione}
+prenotazione\+\_\+persona deve contenere tutti i dati delle prenotazioni 
+
+numero\+\_\+prenotazioni deve contenere il numero effettivo delle prenotazioni 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di ciascuna prenotazione vengono visualizzati nel terminale. 
+\end{DoxyPostcond}
+Vizualizzo tutte le prenotazioni, eccetto chi ha l\textquotesingle{}id del volo vuoto, cioe\textquotesingle{} e\textquotesingle{} stato eliminato.
+
+Inoltre dato che imposto che il check in potra\textquotesingle{} avere essenzialmente valori uguali a 0 o 1, in base al valore stampo determinati messaggi. \mbox{\Hypertarget{prenotazione_8c_acadb90a5c305e2578d6ddc27796df202}\label{prenotazione_8c_acadb90a5c305e2578d6ddc27796df202}} 
+\index{prenotazione.\+c@{prenotazione.\+c}!visualizza\+\_\+una\+\_\+prenotazione@{visualizza\+\_\+una\+\_\+prenotazione}}
+\index{visualizza\+\_\+una\+\_\+prenotazione@{visualizza\+\_\+una\+\_\+prenotazione}!prenotazione.\+c@{prenotazione.\+c}}
+\subsubsection{\texorpdfstring{visualizza\+\_\+una\+\_\+prenotazione()}{visualizza\_una\_prenotazione()}}
+{\footnotesize\ttfamily int visualizza\+\_\+una\+\_\+prenotazione (\begin{DoxyParamCaption}\item[{\hyperlink{structprenotazione}{prenotazione}}]{prenotazione\+\_\+persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+prenotazioni,  }\item[{int}]{indice\+\_\+prenotazione }\end{DoxyParamCaption})}
+
+Questa funzione permette di visualizzare una determinata prenotazione. Viene chiamata ogni volta che nel programma c\textquotesingle{}e\textquotesingle{} bisogno di visualizzare una prenotazione, ad esempio quando si modifica o si elimina una prenotazione. \begin{DoxyPrecond}{Precondizione}
+prenotazione\+\_\+persona deve contenere tutti i dati delle prenotazioni 
+
+numero\+\_\+prenotazioni deve contenere il numero effettivo delle prenotazioni 
+
+indice\+\_\+prenotazione deve contenere l\textquotesingle{}indice della prenotazione che si vuole visualizzare. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di un determinata prenotazione vengono visualizzati sul terminale. 
+\end{DoxyPostcond}
+Vizualizzo una determinata prenotazione, ma se ha l\textquotesingle{}id del volo vuoto(cioe\textquotesingle{} e\textquotesingle{} stata eliminata) non la visualizzo
+
+Inoltre dato che imposto che il check in potra\textquotesingle{} avere essenzialmente valori uguali a 0 o 1, in base al valore stampo determinati messaggi 

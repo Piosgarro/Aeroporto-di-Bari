@@ -1,0 +1,134 @@
+\hypertarget{controlli__passeggeri_8c}{}\section{Riferimenti per il file controlli\+\_\+passeggeri.\+c}
+\label{controlli__passeggeri_8c}\index{controlli\+\_\+passeggeri.\+c@{controlli\+\_\+passeggeri.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}controlli\+\_\+passeggeri.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}passeggero.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}costanti.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data.\+h\char`\"{}}\newline
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{controlli__passeggeri_8c_a82a3e14e6f5184a69aae4b076ac3829c}{controllo\+\_\+\+Stringa\+\_\+passeggero} (char stringa\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{controlli__passeggeri_8c_abeddc7b55f33b2a8571863b307108776}{controllo\+\_\+\+Passaporto} (char passaporto\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{controlli__passeggeri_8c_a966c4611f213a01f56d8fd99a7ebc88e}{controllo\+\_\+giorno\+\_\+data\+\_\+di\+\_\+nascita} (char giorno1\mbox{[}$\,$\mbox{]}, int $\ast$giorno\+\_\+data\+\_\+di\+\_\+nascita)
+\item 
+int \hyperlink{controlli__passeggeri_8c_ae51505fc670b52201ce316a05a6bab1b}{controllo\+\_\+mese\+\_\+data\+\_\+di\+\_\+nascita} (char mese1\mbox{[}$\,$\mbox{]}, int $\ast$mese\+\_\+data\+\_\+di\+\_\+nascita)
+\item 
+int \hyperlink{controlli__passeggeri_8c_a59197c252d125b851d68535e7e650ac8}{controllo\+\_\+anno\+\_\+data\+\_\+di\+\_\+nascita} (char anno1\mbox{[}$\,$\mbox{]}, int $\ast$anno\+\_\+data\+\_\+di\+\_\+nascita)
+\item 
+int \hyperlink{controlli__passeggeri_8c_a73d3c6082d95fb2f0e1dd55bd2644a23}{controllo\+\_\+generale\+\_\+sulla\+\_\+data} (\hyperlink{structdata}{data} data\+\_\+nascita)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+\begin{DoxyAuthor}{Autori}
+Sgarro Vincenzo Pio, Sokoli Afrim 
+\end{DoxyAuthor}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{controlli__passeggeri_8c_a59197c252d125b851d68535e7e650ac8}\label{controlli__passeggeri_8c_a59197c252d125b851d68535e7e650ac8}} 
+\index{controlli\+\_\+passeggeri.\+c@{controlli\+\_\+passeggeri.\+c}!controllo\+\_\+anno\+\_\+data\+\_\+di\+\_\+nascita@{controllo\+\_\+anno\+\_\+data\+\_\+di\+\_\+nascita}}
+\index{controllo\+\_\+anno\+\_\+data\+\_\+di\+\_\+nascita@{controllo\+\_\+anno\+\_\+data\+\_\+di\+\_\+nascita}!controlli\+\_\+passeggeri.\+c@{controlli\+\_\+passeggeri.\+c}}
+\subsubsection{\texorpdfstring{controllo\+\_\+anno\+\_\+data\+\_\+di\+\_\+nascita()}{controllo\_anno\_data\_di\_nascita()}}
+{\footnotesize\ttfamily int controllo\+\_\+anno\+\_\+data\+\_\+di\+\_\+nascita (\begin{DoxyParamCaption}\item[{char}]{anno1\mbox{[}$\,$\mbox{]},  }\item[{int $\ast$}]{anno\+\_\+data\+\_\+di\+\_\+nascita }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare l\textquotesingle{}anno di nascita inserito dall\textquotesingle{}utente. Inizialmente controllo se i caratteri inseriti dall\textquotesingle{}utente siano compresi tra 1 e 4.\+Successivamente controllo se i caratteri inseriti siano numerici. Infine controllo se l\textquotesingle{}anno inserito dall\textquotesingle{}utente sia compreso tra 1960 e 2001. \begin{DoxyPrecond}{Precondizione}
+anno1 vettore di char che deve contenere l\textquotesingle{}anno inserito, sul quale effettuo i vari controlli. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+anno\+\_\+data\+\_\+di\+\_\+nascita variabile che conterra\textquotesingle{} l\textquotesingle{}anno convertito in intero. 
+
+L\textquotesingle{}anno di nascita 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se il giorno di nascita e\textquotesingle{} inserito correttamente,0 altrimenti
+
+Converto il giorno di nascita in intero in modo tale da controllare se e\textquotesingle{} minore di 1960 o maggiore di 2001. \mbox{\Hypertarget{controlli__passeggeri_8c_a73d3c6082d95fb2f0e1dd55bd2644a23}\label{controlli__passeggeri_8c_a73d3c6082d95fb2f0e1dd55bd2644a23}} 
+\index{controlli\+\_\+passeggeri.\+c@{controlli\+\_\+passeggeri.\+c}!controllo\+\_\+generale\+\_\+sulla\+\_\+data@{controllo\+\_\+generale\+\_\+sulla\+\_\+data}}
+\index{controllo\+\_\+generale\+\_\+sulla\+\_\+data@{controllo\+\_\+generale\+\_\+sulla\+\_\+data}!controlli\+\_\+passeggeri.\+c@{controlli\+\_\+passeggeri.\+c}}
+\subsubsection{\texorpdfstring{controllo\+\_\+generale\+\_\+sulla\+\_\+data()}{controllo\_generale\_sulla\_data()}}
+{\footnotesize\ttfamily int controllo\+\_\+generale\+\_\+sulla\+\_\+data (\begin{DoxyParamCaption}\item[{\hyperlink{structdata}{data}}]{data\+\_\+nascita }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare se la data di nascita inserita e\textquotesingle{} realistica. Inizialmente controllo se il giorno inserito sia compreso tra 1 e 30 nel caso il mese fosse Aprile,Giugno,Settembre,Novembre. Nel caso se il mese fosse Febbraio verifico che l\textquotesingle{}anno sia o meno bisestile. In caso positivo il massimo dei giorni sara\textquotesingle{} 29 altrimenti 28.\+In tutti gli altri mesi il massimo è 31 \begin{DoxyPrecond}{Precondizione}
+data\+\_\+nascita vettore di struct di tipo data che deve contenere la data di nascita inserita dall\textquotesingle{}utente. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+La data di nascita 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se la data di nascita e\textquotesingle{} inserita correttamente,0 altrimenti \mbox{\Hypertarget{controlli__passeggeri_8c_a966c4611f213a01f56d8fd99a7ebc88e}\label{controlli__passeggeri_8c_a966c4611f213a01f56d8fd99a7ebc88e}} 
+\index{controlli\+\_\+passeggeri.\+c@{controlli\+\_\+passeggeri.\+c}!controllo\+\_\+giorno\+\_\+data\+\_\+di\+\_\+nascita@{controllo\+\_\+giorno\+\_\+data\+\_\+di\+\_\+nascita}}
+\index{controllo\+\_\+giorno\+\_\+data\+\_\+di\+\_\+nascita@{controllo\+\_\+giorno\+\_\+data\+\_\+di\+\_\+nascita}!controlli\+\_\+passeggeri.\+c@{controlli\+\_\+passeggeri.\+c}}
+\subsubsection{\texorpdfstring{controllo\+\_\+giorno\+\_\+data\+\_\+di\+\_\+nascita()}{controllo\_giorno\_data\_di\_nascita()}}
+{\footnotesize\ttfamily int controllo\+\_\+giorno\+\_\+data\+\_\+di\+\_\+nascita (\begin{DoxyParamCaption}\item[{char}]{giorno1\mbox{[}$\,$\mbox{]},  }\item[{int $\ast$}]{giorno\+\_\+data\+\_\+di\+\_\+nascita }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare il giorno di nascita inserito dall\textquotesingle{}utente. Inizialmente controllo se i caratteri inseriti dall\textquotesingle{}utente siano compresi tra 1 e 2.\+Successivamente controllo se i caratteri inseriti siano numerici. Infine controllo se il giorno inserito dall\textquotesingle{}utente sia compreso tra 1 e 31. \begin{DoxyPrecond}{Precondizione}
+giorno1 vettore di char che deve contenere il giorno inserito, sul quale effettuo i vari controlli. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+giorno\+\_\+data\+\_\+di\+\_\+nascita variabile che conterra\textquotesingle{} il giorno convertito in intero. 
+
+Il giorno di nascita. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se il giorno di nascita e\textquotesingle{} stato inserito correttamente,0 altrimenti
+
+Converto il giorno di nascita in intero in modo tale da controllare se e\textquotesingle{} minore di 1 o maggiore di 31. \mbox{\Hypertarget{controlli__passeggeri_8c_ae51505fc670b52201ce316a05a6bab1b}\label{controlli__passeggeri_8c_ae51505fc670b52201ce316a05a6bab1b}} 
+\index{controlli\+\_\+passeggeri.\+c@{controlli\+\_\+passeggeri.\+c}!controllo\+\_\+mese\+\_\+data\+\_\+di\+\_\+nascita@{controllo\+\_\+mese\+\_\+data\+\_\+di\+\_\+nascita}}
+\index{controllo\+\_\+mese\+\_\+data\+\_\+di\+\_\+nascita@{controllo\+\_\+mese\+\_\+data\+\_\+di\+\_\+nascita}!controlli\+\_\+passeggeri.\+c@{controlli\+\_\+passeggeri.\+c}}
+\subsubsection{\texorpdfstring{controllo\+\_\+mese\+\_\+data\+\_\+di\+\_\+nascita()}{controllo\_mese\_data\_di\_nascita()}}
+{\footnotesize\ttfamily int controllo\+\_\+mese\+\_\+data\+\_\+di\+\_\+nascita (\begin{DoxyParamCaption}\item[{char}]{mese1\mbox{[}$\,$\mbox{]},  }\item[{int $\ast$}]{mese\+\_\+data\+\_\+di\+\_\+nascita }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare il mese di nascita inserito dall\textquotesingle{}utente. Inizialmente controllo se i caratteri inseriti dall\textquotesingle{}utente siano compresi tra 1 e 2.\+Successivamente controllo se i caratteri inseriti siano numerici. Infine controllo se il mese inserito dall\textquotesingle{}utente sia compreso tra 1 e 12. \begin{DoxyPrecond}{Precondizione}
+mese1 vettore di char che deve contenere il mese inserito, sul quale effettuo i vari controlli. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+mese\+\_\+data\+\_\+di\+\_\+nascita variabile che conterra\textquotesingle{} il giorno convertito in intero. 
+
+Il mese di nascita. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se il mese di nascita e\textquotesingle{} stato inserito correttamente,0 altrimenti
+
+Converto il mese di nascita in intero in modo tale da controllare se e\textquotesingle{} minore di 1 o maggiore di 12. \mbox{\Hypertarget{controlli__passeggeri_8c_abeddc7b55f33b2a8571863b307108776}\label{controlli__passeggeri_8c_abeddc7b55f33b2a8571863b307108776}} 
+\index{controlli\+\_\+passeggeri.\+c@{controlli\+\_\+passeggeri.\+c}!controllo\+\_\+\+Passaporto@{controllo\+\_\+\+Passaporto}}
+\index{controllo\+\_\+\+Passaporto@{controllo\+\_\+\+Passaporto}!controlli\+\_\+passeggeri.\+c@{controlli\+\_\+passeggeri.\+c}}
+\subsubsection{\texorpdfstring{controllo\+\_\+\+Passaporto()}{controllo\_Passaporto()}}
+{\footnotesize\ttfamily int controllo\+\_\+\+Passaporto (\begin{DoxyParamCaption}\item[{char}]{passaporto\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione che permette di controllare il codice di passaporto inserito. Inizialmente controllo se i caratteri inseriti siano diversi di 9. Successivamente controllo se i primi due caratteri inseriti siano alfabetici e siano in maiuscolo,mentre i restanti 7 siano numerici. \begin{DoxyPrecond}{Precondizione}
+passaporto vettore di char che deve contenere il codice di passaporto sul quale effettuo i vari controlli. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Il codice del passaporto inserito. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se il codice di passaporto e\textquotesingle{} stato inserito correttamente,0 altrimenti \mbox{\Hypertarget{controlli__passeggeri_8c_a82a3e14e6f5184a69aae4b076ac3829c}\label{controlli__passeggeri_8c_a82a3e14e6f5184a69aae4b076ac3829c}} 
+\index{controlli\+\_\+passeggeri.\+c@{controlli\+\_\+passeggeri.\+c}!controllo\+\_\+\+Stringa\+\_\+passeggero@{controllo\+\_\+\+Stringa\+\_\+passeggero}}
+\index{controllo\+\_\+\+Stringa\+\_\+passeggero@{controllo\+\_\+\+Stringa\+\_\+passeggero}!controlli\+\_\+passeggeri.\+c@{controlli\+\_\+passeggeri.\+c}}
+\subsubsection{\texorpdfstring{controllo\+\_\+\+Stringa\+\_\+passeggero()}{controllo\_Stringa\_passeggero()}}
+{\footnotesize\ttfamily int controllo\+\_\+\+Stringa\+\_\+passeggero (\begin{DoxyParamCaption}\item[{char}]{stringa\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare il nome o il cognome inseriti dall\textquotesingle{}utente.\+Inizialmente controllo se l\textquotesingle{}utente inserisce degli spazi prima di scrivere il nome o il cognome. Succcessivamente controllo se la stringa inserita dall\textquotesingle{}utente sia composta solo da caratteri alfabetici. Infine controllo se l\textquotesingle{}utente abbia inserito piu\textquotesingle{} di un spazio. \begin{DoxyPrecond}{Precondizione}
+stringa vettore di char che deve contenere il nome o il cognome inserito , sulla quale effettuo i vari controlli. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Il nome o il cognome inserito. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se il nome o il cognome siano inseriti correttamente,0 altrimenti
+
+Variabile che conterra\textquotesingle{} il numero di caratteri del nome o cognome inserito.
+
+Variabile che conta gli spazi inseriti dall\textquotesingle{}utente.
+
+Pongo il primo carattere alfabetico in maiuscolo.
+
+Delimino tutti gli eventuali spazi inseriti inizialmente dall\textquotesingle{}utente.
+
+Controllo se l\textquotesingle{}utente ha inserito eventuali spazi.
+
+Controllo se gli spazi inseriti dall\textquotesingle{}utente sono piu\textquotesingle{} di uno.
+
+Rimuovo lo ~\newline
+ e lo sovrascrivo con il terminatore di stringa \textbackslash{}0 

@@ -1,0 +1,86 @@
+\hypertarget{menu_8c}{}\section{Riferimenti per il file menu.\+c}
+\label{menu_8c}\index{menu.\+c@{menu.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}passeggero.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}svuota\+\_\+buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}costanti.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}volo.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}prenotazione.\+h\char`\"{}}\newline
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{menu_8c_ab1c8292e23e03af5db3bec8fb61ce662}{acquisisci\+\_\+scelta} (int $\ast$t)
+\item 
+void \hyperlink{menu_8c_a2a0e843767aeea4f433a28b9c54f573a}{menu} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+\begin{DoxyAuthor}{Autori}
+Sgarro Vincenzo Pio, Sokoli Afrim 
+\end{DoxyAuthor}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{menu_8c_ab1c8292e23e03af5db3bec8fb61ce662}\label{menu_8c_ab1c8292e23e03af5db3bec8fb61ce662}} 
+\index{menu.\+c@{menu.\+c}!acquisisci\+\_\+scelta@{acquisisci\+\_\+scelta}}
+\index{acquisisci\+\_\+scelta@{acquisisci\+\_\+scelta}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{acquisisci\+\_\+scelta()}{acquisisci\_scelta()}}
+{\footnotesize\ttfamily int acquisisci\+\_\+scelta (\begin{DoxyParamCaption}\item[{int $\ast$}]{t }\end{DoxyParamCaption})}
+
+Questa funzione controlla se la scelta inserita e\textquotesingle{} un numero. \begin{DoxyPrecond}{Precondizione}
+t deve essere inizializzata a 0. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+La t conterra\textquotesingle{} 1 se la scelta inserita e\textquotesingle{} corretta oppure 0 altrimenti. 
+
+La s conterra\textquotesingle{} la scelta inserita dall\textquotesingle{}utente. 
+\end{DoxyPostcond}
+Vettore che conterra\textquotesingle{} i caratteri non numerici nel caso vengano inseriti dall\textquotesingle{}utente.
+
+Variabile che conterra\textquotesingle{} la scelta dell\textquotesingle{}utente
+
+Variabile che conterra\textquotesingle{} la scelta dell\textquotesingle{}utente trasformata in un numero.
+
+La funzione strtol prende in input un valore in formato stringa e lo converte in un long. La parte rimanente viene
+
+memorizzata in una ulteriore stringa(buffer). Effettuo il cast int.
+
+In questo controllo si entrera\textquotesingle{} se la scelta inserita dall\textquotesingle{}utente e\textquotesingle{} un numero. \mbox{\Hypertarget{menu_8c_a2a0e843767aeea4f433a28b9c54f573a}\label{menu_8c_a2a0e843767aeea4f433a28b9c54f573a}} 
+\index{menu.\+c@{menu.\+c}!menu@{menu}}
+\index{menu@{menu}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Questa funzione visualizza il menu iniziale del programma. Viene mostrato all\textquotesingle{}utente un menu con tutte le funzionalita\textquotesingle{} possibili del programma. Una volta effettuata una scelta tra le disponibili, verranno chiamate altre funzioni che si occupeanno di quella determinata scelta. Variabile che contiene la scelta inserita,relativa a quale funzionalita\textquotesingle{} si vuole effettuare.
+
+Variabile che conterrà 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Dichiaro un vettore di struct di tipo passeggero composto dal numero dei passeggeri piu\textquotesingle{} 1
+
+per permettermi successivamente di inserire un nuovo passeggero.
+
+Dichiaro un vettore di struct di tipo volo composto dal numero dei voli piu\textquotesingle{} 1 per permettermi successivamente di inserire un nuovo volo
+
+Dichiaro un vettore di struct di tipo prenotazione composto dal numero delle prenotazioni
+
+piu\textquotesingle{} 1 per permettermi di inserire successivamente una nuova prenotazione.
+
+decremento 1 al numero dei passeggeri in modo da non considerare la struct vuota
+
+nel caso di modifica o eliminazione.
+
+decremento 1 al numero di voli in modo da non considerare la struct vuota
+
+nel caso di modifica o eliminazione.
+
+decremento 1 al numero delle prenotazioni in modo da non considerare la struct vuota
+
+nel caso di modifica o eliminazione.
+
+Se l\textquotesingle{}utente non inserisce una tra le scelte presenti nel menu\textquotesingle{}, dovra\textquotesingle{} inserire una nuova scelta.
+
+Inoltre se inserisce 17, termina il programma. 

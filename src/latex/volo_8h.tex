@@ -1,0 +1,601 @@
+\hypertarget{volo_8h}{}\section{Riferimenti per il file volo.\+h}
+\label{volo_8h}\index{volo.\+h@{volo.\+h}}
+{\ttfamily \#include \char`\"{}ora.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}costanti.\+h\char`\"{}}\newline
+\subsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvolo}{volo}
+\end{DoxyCompactItemize}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli} ()
+\item 
+int \hyperlink{volo_8h_a9c5229175647ea6539a5f54fd817d81c}{caricamento\+\_\+voli} (\hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\item 
+int \hyperlink{volo_8h_a9cdbcf23d2adb566704d88af9bf5b04e}{salvataggio\+\_\+su\+\_\+file\+\_\+voli} (\hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\item 
+int \hyperlink{volo_8h_a245fdac0435ad469dfe3b27b616e4e2c}{visualizza\+\_\+voli} (\hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\item 
+int \hyperlink{volo_8h_ac2f7eb05eed6b32ade58281240b0f035}{visualizza\+\_\+un\+\_\+volo} (\hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli}, int indice\+\_\+volo)
+\item 
+int \hyperlink{volo_8h_adb1bc3f962525fbaa097812672e62226}{inserisci\+\_\+nuovo\+\_\+volo} (\hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\item 
+int \hyperlink{volo_8h_ac249623cf04ce8197ce13d4ff5553ad7}{modifica\+\_\+volo} (\hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\item 
+int \hyperlink{volo_8h_a3efc31c69b7b609538282239962ed9b2}{elimina\+\_\+volo} (\hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\item 
+int \hyperlink{volo_8h_a07680f3e1f7cc7c54636db648514e757}{ricerca\+\_\+per\+\_\+compagnia} (\hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, char stringa\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\item 
+int \hyperlink{volo_8h_a26907dc3ca17b3eda46b0d7b5b423d97}{ricerca\+\_\+per\+\_\+destinazione} (\hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, char stringa\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\item 
+int \hyperlink{volo_8h_abf6faafb65bfa37da9d1d9065f336c06}{ricerca\+\_\+per\+\_\+giorno\+\_\+volo} (\hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, \hyperlink{structdata}{data} data\+\_\+ricercata, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\item 
+int \hyperlink{volo_8h_ad69d3aef210d90297c76937b36d10a0b}{ricerca\+\_\+voli} (\hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]}, int \hyperlink{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}{numero\+\_\+di\+\_\+voli})
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+Libreria che contiene tutte le funzioni relative ai voli \begin{DoxyAuthor}{Autori}
+Sgarro Vincenzo Pio, Sokoli Afrim 
+\end{DoxyAuthor}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{volo_8h_a9c5229175647ea6539a5f54fd817d81c}\label{volo_8h_a9c5229175647ea6539a5f54fd817d81c}} 
+\index{volo.\+h@{volo.\+h}!caricamento\+\_\+voli@{caricamento\+\_\+voli}}
+\index{caricamento\+\_\+voli@{caricamento\+\_\+voli}!volo.\+h@{volo.\+h}}
+\subsubsection{\texorpdfstring{caricamento\+\_\+voli()}{caricamento\_voli()}}
+{\footnotesize\ttfamily int caricamento\+\_\+voli (\begin{DoxyParamCaption}\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di caricare i dati sull\textquotesingle{}array di struct. 
+\begin{DoxyParams}{Parametri}
+{\em voli} & array di struct che conterra\textquotesingle{} tutti i dati dei voli \\
+\hline
+{\em numero\+\_\+di\+\_\+voli} & numero dei voli \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+corretto cioe\textquotesingle{} 1 se la funzione ha caricato i dati, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione carica i dati dal file voli all\textquotesingle{}array di struct voli per permettere di lavorare su quei dati. \begin{DoxyPrecond}{Precondizione}
+numero\+\_\+dei\+\_\+voli deve contenere il numero effettivo dei voli 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+L\textquotesingle{}array di struct voli conterra\textquotesingle{} tutti i dati dei voli. 
+\end{DoxyPostcond}
+Leggo tutti i dati dei voli dal file e li salvo sull array di struct \mbox{\Hypertarget{volo_8h_a3efc31c69b7b609538282239962ed9b2}\label{volo_8h_a3efc31c69b7b609538282239962ed9b2}} 
+\index{volo.\+h@{volo.\+h}!elimina\+\_\+volo@{elimina\+\_\+volo}}
+\index{elimina\+\_\+volo@{elimina\+\_\+volo}!volo.\+h@{volo.\+h}}
+\subsubsection{\texorpdfstring{elimina\+\_\+volo()}{elimina\_volo()}}
+{\footnotesize\ttfamily int elimina\+\_\+volo (\begin{DoxyParamCaption}\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di eliminare un volo. 
+\begin{DoxyParams}{Parametri}
+{\em voli} & array di struct che conterra\textquotesingle{} tutti i dati dei voli \\
+\hline
+{\em numero\+\_\+di\+\_\+voli} & numero dei voli \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1.
+\end{DoxyReturn}
+Questa funzione permette di eliminare un volo. Inizialmente viene controllato che l\textquotesingle{}id del volo da eliminare e\textquotesingle{} stato inserito corretamente. Infine vengono eliminati i dati del volo. \begin{DoxyPrecond}{Precondizione}
+voli deve contenere tutti i dati dei voli 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero effettivo dei voli 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Il volo selezionato dall\textquotesingle{}utente verra\textquotesingle{} eliminato e i suoi dati non verranno visualizzati nell\textquotesingle{}array di struct. 
+\end{DoxyPostcond}
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice del volo da eliminare.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}id del volo esiste (e\textquotesingle{} presente nel file) ,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}id del volo e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice di ogni volo
+
+Variabile di tipo volo utilizzata per contenere l\textquotesingle{}id del volo che l\textquotesingle{}utente vuole eliminare.
+
+Scorrendo tutti i voli, se il volo inserito dall\textquotesingle{}utente e\textquotesingle{} presente nel file voli, mi salvo l\textquotesingle{}indice di quel volo, in modo da eliminarlo
+
+Ciclo che permette all\textquotesingle{}utente di inserire un id\+\_\+volo finche\textquotesingle{} non inserisce un id\+\_\+volo valido ed esistente. \mbox{\Hypertarget{volo_8h_adb1bc3f962525fbaa097812672e62226}\label{volo_8h_adb1bc3f962525fbaa097812672e62226}} 
+\index{volo.\+h@{volo.\+h}!inserisci\+\_\+nuovo\+\_\+volo@{inserisci\+\_\+nuovo\+\_\+volo}}
+\index{inserisci\+\_\+nuovo\+\_\+volo@{inserisci\+\_\+nuovo\+\_\+volo}!volo.\+h@{volo.\+h}}
+\subsubsection{\texorpdfstring{inserisci\+\_\+nuovo\+\_\+volo()}{inserisci\_nuovo\_volo()}}
+{\footnotesize\ttfamily int inserisci\+\_\+nuovo\+\_\+volo (\begin{DoxyParamCaption}\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di inserire un nuovo volo. 
+\begin{DoxyParams}{Parametri}
+{\em voli} & array di struct che conterra\textquotesingle{} tutti i dati dei voli \\
+\hline
+{\em numero\+\_\+di\+\_\+voli} & numero dei voli \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1.
+\end{DoxyReturn}
+Questa funzione permette di inserire un nuovo volo. Inizialmente vengono controllati che i dati del nuovo volo vengano inseriti correttamente. Infine vengono memorizzati i dati del nuovo volo nell\textquotesingle{}ultima posizione dell\textquotesingle{}array di struct. \begin{DoxyPrecond}{Precondizione}
+voli deve contenere tutti i dati dei voli.\+In particolare in questa funzione serve per memorizzare i dati del nuovo volo inserito. 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero effettivo dei voli 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati del nuovo volo verranno salvati nell\textquotesingle{}ultima posizione dell\textquotesingle{}array di struct volo. 
+\end{DoxyPostcond}
+Variabile di tipo volo utilizzata contenere i dati del nuovo volo inseriti dall\textquotesingle{}utente.
+
+Variabile di tipo passeggero utilizzata per prendere successivamente la data del sistema.
+
+Vettore \char`\"{}posti\char`\"{} che contiene i posti del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sui posti inserito.
+
+Vettore \char`\"{}giorno\char`\"{} che contiene il giorno di volo del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sul giorno di volo inserito.
+
+Vettore \char`\"{}mese\char`\"{} che contiene il mese di volo del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sul mese di volo inserito.
+
+Vettore \char`\"{}anno\char`\"{} che contiene l\textquotesingle{}anno di volo del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sull\textquotesingle{}anno di volo inserito
+
+Vettore \char`\"{}ora\char`\"{} che contiene il l\textquotesingle{}ora di volo del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sull\textquotesingle{}ora di volo inserito
+
+Vettore \char`\"{}minuti\char`\"{} che contiene i minuti di volo del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sui minuti di volo inserito
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}id del volo sara\textquotesingle{} diverso dagli altri,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}id del volo e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se i posti sono stati inseriti correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il giorno di volo e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il mese e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}anno e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la data inserita e\textquotesingle{} reale,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la data inserita e\textquotesingle{} corretta, cioe\textquotesingle{} e\textquotesingle{} successiva alla data del sistema,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}ora di partenza e\textquotesingle{} stata inserita correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se i minuti di partenza sono stati inseriti correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}ora di partenza(ora e minuti) inseriti sono reali,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}ora di arrivo e\textquotesingle{} stata inserita correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se i minuti di arrivo sono stati inseriti correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}ora di arrivo(ora e minuti) inseriti sono reali(cioe\textquotesingle{} sono successivi all\textquotesingle{}ora di arrivo),0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il nome della compagnia e\textquotesingle{} stata inserita correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la destinazione e\textquotesingle{} stata inserita correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la tipologia di volo e\textquotesingle{} stata inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} il giorno del sistema
+
+Variabile che conterra\textquotesingle{} il mese del sistema.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}anno del sistema.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un nuovo id\+\_\+volo finche\textquotesingle{} non inserisce un id\+\_\+volo valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un nome di compagnia finche\textquotesingle{} non inserisce un nome valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire una destinazione finche\textquotesingle{} non inserisce una destinazione valida.
+
+Ciclo che permette all\textquotesingle{}utente di inserire una tipologia di aereo finche\textquotesingle{} non inserisce una tipologia valida.
+
+Ciclo che permette all\textquotesingle{}utente di inserire dei posti finche\textquotesingle{} non inserisce posti validi.
+
+Ciclo che permette all\textquotesingle{}utente di inserire una data finche\textquotesingle{} non inserisce una data reale e corretta.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un giorno di volo finche\textquotesingle{} non inserisce un giorno valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un mese di volo finche\textquotesingle{} non inserisce un mese valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un anno di volo finche\textquotesingle{} non inserisce un anno valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un\textquotesingle{}ora di partenza(ora e minuti) di volo finche\textquotesingle{} non ne inserisce una reale.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un\textquotesingle{}ora di partenza di volo finche\textquotesingle{} non inserisce un\textquotesingle{}ora valida.
+
+Ciclo che permette all\textquotesingle{}utente di inserire dei minuti di partenza di volo finche\textquotesingle{} non inserisce minuti validi.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un\textquotesingle{}ora di arrivo(ora e minuti) di volo finche\textquotesingle{} non ne inserisce una reale.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un\textquotesingle{}ora di arrivo di volo finche\textquotesingle{} non inserisce un\textquotesingle{}ora valida.
+
+Ciclo che permette all\textquotesingle{}utente di inserire dei minuti di arrivo di volo finche\textquotesingle{} non inserisce minuti validi. \mbox{\Hypertarget{volo_8h_ac249623cf04ce8197ce13d4ff5553ad7}\label{volo_8h_ac249623cf04ce8197ce13d4ff5553ad7}} 
+\index{volo.\+h@{volo.\+h}!modifica\+\_\+volo@{modifica\+\_\+volo}}
+\index{modifica\+\_\+volo@{modifica\+\_\+volo}!volo.\+h@{volo.\+h}}
+\subsubsection{\texorpdfstring{modifica\+\_\+volo()}{modifica\_volo()}}
+{\footnotesize\ttfamily int modifica\+\_\+volo (\begin{DoxyParamCaption}\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di modificare i dati dei voli. 
+\begin{DoxyParams}{Parametri}
+{\em voli} & array di struct che conterra\textquotesingle{} tutti i dati dei voli \\
+\hline
+{\em numero\+\_\+di\+\_\+voli} & numero dei voli \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1.
+\end{DoxyReturn}
+Questa funzione permette di modificare i dati di un volo esistente. Inizialmente viene chiesto all\textquotesingle{}utente di scegliere uno tra i voli presenti da modificare. Successivamente gli viene mostrato un secondo menu\textquotesingle{} dove vengono indicati i vari campi di quel volo da modificare. Una volta modificato uno tra quei campi, il volo scelto dall\textquotesingle{}utente verra\textquotesingle{} modificato. \begin{DoxyPrecond}{Precondizione}
+voli deve contenere tutti i dati dei voli 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero effettivo dei voli 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di un determinato volo verranno modificati. 
+\end{DoxyPostcond}
+Variabile di tipo volo utilizzata per contenere uno dei campi modificati inseriti dall\textquotesingle{}utente.
+
+Variabile di tipo passeggero utilizzata per prendere successivamente la data del sistema.
+
+Vettore \char`\"{}posti\char`\"{} che contiene i posti del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sui posti inserito.
+
+Vettore \char`\"{}giorno\char`\"{} che contiene il giorno di volo del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sul giorno di volo inserito.
+
+Vettore \char`\"{}mese\char`\"{} che contiene il mese di volo del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sul mese di volo inserito.
+
+Vettore \char`\"{}anno\char`\"{} che contiene l\textquotesingle{}anno di volo del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sull\textquotesingle{}anno di volo inserito
+
+Vettore \char`\"{}ora\char`\"{} che contiene il l\textquotesingle{}ora di volo del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sull\textquotesingle{}ora di volo inserito
+
+Vettore \char`\"{}minuti\char`\"{} che contiene i minuti di volo del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sui minuti di volo inserito
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}id del volo e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}id del volo sara\textquotesingle{} diverso dagli altri,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}id del volo esiste (e\textquotesingle{} presente nel file) ,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}id del volo e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se i posti sono stati inseriti correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il giorno di volo e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il mese e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}anno e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la data inserita e\textquotesingle{} reale,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la data inserita e\textquotesingle{} corretta, cioe\textquotesingle{} e\textquotesingle{} successiva alla data del sistema,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}ora di partenza e\textquotesingle{} stata inserita correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se i minuti di partenza sono stati inseriti correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}ora di partenza(ora e minuti) inseriti sono reali,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}ora di arrivo e\textquotesingle{} stata inserita correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se i minuti di arrivo sono stati inseriti correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}ora di arrivo(ora e minuti) inseriti sono reali(cioe\textquotesingle{} sono successivi all\textquotesingle{}ora di arrivo),0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il nome della compagnia e\textquotesingle{} stata inserita correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la destinazione e\textquotesingle{} stata inserita correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la tipologia di volo e\textquotesingle{} stata inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} il giorno del sistema
+
+Variabile che conterra\textquotesingle{} il mese del sistema.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}anno del sistema.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice del volo da modificare
+
+Variabile utilizzata per uscire dal ciclo.
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} la scelta inserita, relativa a quale campo si vuole modificare.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice di ogni volo
+
+Scorrendo tutti i voli, se il volo inserito dall\textquotesingle{}utente e\textquotesingle{} presente nel file voli, mi salvo l\textquotesingle{}indice di quel volo, in modo da modificarlo
+
+Ciclo che permette all\textquotesingle{}utente di inserire un id\+\_\+volo finche\textquotesingle{} non inserisce un id\+\_\+volo valido ed esistente.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un id\+\_\+volo finche\textquotesingle{} non inserisce un id\+\_\+volo valido.
+
+Il campo modificato dall\textquotesingle{}utente viene salvato in quella posizione dell\textquotesingle{}array di struct dei voli.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un nome di compagnia finche\textquotesingle{} non inserisce un nome valido.
+
+Il campo modificato dall\textquotesingle{}utente viene salvato in quella posizione dell\textquotesingle{}array di struct dei voli.
+
+Ciclo che permette all\textquotesingle{}utente di inserire una destinazione finche\textquotesingle{} non inserisce una destinazione valido.
+
+Il campo modificato dall\textquotesingle{}utente viene salvato in quella posizione dell\textquotesingle{}array di struct dei voli.
+
+Ciclo che permette all\textquotesingle{}utente di inserire una tipologia di aereo finche\textquotesingle{} non inserisce una tipologia valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire dei posti finche\textquotesingle{} non inserisce posti validi
+
+Ciclo che permette all\textquotesingle{}utente di inserire una data finche\textquotesingle{} non inserisce una data reale e corretta.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un giorno di volo finche\textquotesingle{} non inserisce un giorno valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un mese di volo finche\textquotesingle{} non inserisce un mese valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un anno di volo finche\textquotesingle{} non inserisce un anno valido.
+
+Il campo modificato dall\textquotesingle{}utente viene salvato in quella posizione dell\textquotesingle{}array di struct dei voli.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un\textquotesingle{}ora di partenza(ora e minuti) di volo finche\textquotesingle{} non ne inserisce una reale.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un\textquotesingle{}ora di partenza di volo finche\textquotesingle{} non inserisce un\textquotesingle{}ora valida.
+
+Ciclo che permette all\textquotesingle{}utente di inserire dei minuti di partenza di volo finche\textquotesingle{} non inserisce minuti valida.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un\textquotesingle{}ora di arrivo(ora e minuti) di volo finche\textquotesingle{} non ne inserisce una reale.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un\textquotesingle{}ora di arrivo di volo finche\textquotesingle{} non inserisce un\textquotesingle{}ora valida.
+
+Ciclo che permette all\textquotesingle{}utente di inserire dei minuti di partenza di volo finche\textquotesingle{} non inserisce minuti valida.
+
+Il campo modificato dall\textquotesingle{}utente viene salvato in quella posizione dell\textquotesingle{}array di struct dei voli.
+
+Se l\textquotesingle{}utente non inserisce una tra le scelte presenti nel menu\textquotesingle{}, dovra\textquotesingle{} inserire una nuova scelta \mbox{\Hypertarget{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}\label{volo_8h_affb8cc31f35d69fa56682d08fe502f2a}} 
+\index{volo.\+h@{volo.\+h}!numero\+\_\+di\+\_\+voli@{numero\+\_\+di\+\_\+voli}}
+\index{numero\+\_\+di\+\_\+voli@{numero\+\_\+di\+\_\+voli}!volo.\+h@{volo.\+h}}
+\subsubsection{\texorpdfstring{numero\+\_\+di\+\_\+voli()}{numero\_di\_voli()}}
+{\footnotesize\ttfamily int numero\+\_\+di\+\_\+voli (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Questa funzione calcola il numero dei voli. \begin{DoxyReturn}{Restituisce}
+il numero dei voli.
+\end{DoxyReturn}
+Questa funzione permette di calcolare il numero dei voli aprendo il file e contando tutti i voli. Viene chiamata ad ogni operazione fatta perchè se viene aggiunto un volo, il numero dei voli deve essere aggiornato. \begin{DoxyPostcond}{Postcondizione}
+il numero dei voli presenti nel file voli. 
+\end{DoxyPostcond}
+Leggo tutti i dati dei voli e ogni volta incremento la i \mbox{\Hypertarget{volo_8h_a07680f3e1f7cc7c54636db648514e757}\label{volo_8h_a07680f3e1f7cc7c54636db648514e757}} 
+\index{volo.\+h@{volo.\+h}!ricerca\+\_\+per\+\_\+compagnia@{ricerca\+\_\+per\+\_\+compagnia}}
+\index{ricerca\+\_\+per\+\_\+compagnia@{ricerca\+\_\+per\+\_\+compagnia}!volo.\+h@{volo.\+h}}
+\subsubsection{\texorpdfstring{ricerca\+\_\+per\+\_\+compagnia()}{ricerca\_per\_compagnia()}}
+{\footnotesize\ttfamily int ricerca\+\_\+per\+\_\+compagnia (\begin{DoxyParamCaption}\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{char}]{stringa\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di ricercare una determinata compagnia tra tutti i voli. 
+\begin{DoxyParams}{Parametri}
+{\em voli} & array di struct che conterra\textquotesingle{} tutti i dati dei voli \\
+\hline
+{\em stringa} & nome compagnia inserito dall\textquotesingle{}utente per cui si vuole effettuare una ricerca \\
+\hline
+{\em numero\+\_\+di\+\_\+voli} & numero dei voli \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se la compagnia inserita dall\textquotesingle{}utente e\textquotesingle{} presente nei voli, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di cercare il nome della compagnia inserita in precedenza dall\textquotesingle{}utente, controllando che sia presente tra quelli inseriti nel file. Inoltre una volta trovato quel nome, verranno visualizzati i dati di quel volo, o eventualmente dei voli che hanno quel nome. \begin{DoxyPrecond}{Precondizione}
+voli deve contenere tutti i dati dei voli 
+
+stringa deve contenere la compagnia inserita dall\textquotesingle{}utente per cui si vuole effettuare una ricerca 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero effettivo dei voli 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di quel o di quei voli cercati, che saranno attraverso una funzione visualizzati all\textquotesingle{}utente. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{volo_8h_a26907dc3ca17b3eda46b0d7b5b423d97}\label{volo_8h_a26907dc3ca17b3eda46b0d7b5b423d97}} 
+\index{volo.\+h@{volo.\+h}!ricerca\+\_\+per\+\_\+destinazione@{ricerca\+\_\+per\+\_\+destinazione}}
+\index{ricerca\+\_\+per\+\_\+destinazione@{ricerca\+\_\+per\+\_\+destinazione}!volo.\+h@{volo.\+h}}
+\subsubsection{\texorpdfstring{ricerca\+\_\+per\+\_\+destinazione()}{ricerca\_per\_destinazione()}}
+{\footnotesize\ttfamily int ricerca\+\_\+per\+\_\+destinazione (\begin{DoxyParamCaption}\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{char}]{stringa\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di ricercare una determinata destinazione tra tutti i voli. 
+\begin{DoxyParams}{Parametri}
+{\em voli} & array di struct che conterra\textquotesingle{} tutti i dati dei voli \\
+\hline
+{\em stringa} & destinazione inserita dall\textquotesingle{}utente per cui si vuole effettuare una ricerca \\
+\hline
+{\em numero\+\_\+di\+\_\+voli} & numero dei voli \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se la destinazione inserita dall\textquotesingle{}utente e\textquotesingle{} presente nei voli, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di cercare la destinazione inserita in precedenza dall\textquotesingle{}utente, controllando che sia presente tra quelle inseriti nel file. Inoltre una volta trovato quella destinazione, verranno visualizzati i dati di quel volo, o eventualmente dei voli che hanno quella destinazione. \begin{DoxyPrecond}{Precondizione}
+voli deve contenere tutti i dati dei voli 
+
+stringa deve contenere la destinazione inserita dall\textquotesingle{}utente per cui si vuole effettuare una ricerca 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero effettivo dei voli 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di quel o di quei voli cercati, che saranno attraverso una funzione visualizzati all\textquotesingle{}utente. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{volo_8h_abf6faafb65bfa37da9d1d9065f336c06}\label{volo_8h_abf6faafb65bfa37da9d1d9065f336c06}} 
+\index{volo.\+h@{volo.\+h}!ricerca\+\_\+per\+\_\+giorno\+\_\+volo@{ricerca\+\_\+per\+\_\+giorno\+\_\+volo}}
+\index{ricerca\+\_\+per\+\_\+giorno\+\_\+volo@{ricerca\+\_\+per\+\_\+giorno\+\_\+volo}!volo.\+h@{volo.\+h}}
+\subsubsection{\texorpdfstring{ricerca\+\_\+per\+\_\+giorno\+\_\+volo()}{ricerca\_per\_giorno\_volo()}}
+{\footnotesize\ttfamily int ricerca\+\_\+per\+\_\+giorno\+\_\+volo (\begin{DoxyParamCaption}\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{structdata}{data}}]{data\+\_\+ricercata,  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di ricercare una determinato giorno di volo tra tutti i voli. 
+\begin{DoxyParams}{Parametri}
+{\em voli} & array di struct che conterra\textquotesingle{} tutti i dati dei voli. \\
+\hline
+{\em data\+\_\+ricercata} & giorno di volo inserito dall\textquotesingle{}utente per cui si vuole effettuare una ricerca \\
+\hline
+{\em numero\+\_\+di\+\_\+voli} & numero dei voli \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se il giorno di volo inserito dall\textquotesingle{}utente e\textquotesingle{} presente nei voli, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di cercare il giorno di volo inserito in precedenza dall\textquotesingle{}utente, controllando che sia presente tra quelli inseriti nel file. Inoltre una volta trovato quel giorno di volo, verranno visualizzati i dati di quel volo, o eventualmente dei voli che partono quel giorno. \begin{DoxyPrecond}{Precondizione}
+voli deve contenere tutti i dati dei voli 
+
+data\+\_\+ricercata deve contenere il giorno di volo inserito dall\textquotesingle{}utente per cui si vuole effettuare una ricerca 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero effettivo dei voli 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di quel o di quei voli cercati, che saranno attraverso una funzione visualizzati all\textquotesingle{}utente. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{volo_8h_ad69d3aef210d90297c76937b36d10a0b}\label{volo_8h_ad69d3aef210d90297c76937b36d10a0b}} 
+\index{volo.\+h@{volo.\+h}!ricerca\+\_\+voli@{ricerca\+\_\+voli}}
+\index{ricerca\+\_\+voli@{ricerca\+\_\+voli}!volo.\+h@{volo.\+h}}
+\subsubsection{\texorpdfstring{ricerca\+\_\+voli()}{ricerca\_voli()}}
+{\footnotesize\ttfamily int ricerca\+\_\+voli (\begin{DoxyParamCaption}\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di ricercare dei voli secondo un determinato criterio. 
+\begin{DoxyParams}{Parametri}
+{\em voli} & array di struct che conterra\textquotesingle{} tutti i dati dei voli. \\
+\hline
+{\em numero\+\_\+di\+\_\+voli} & numero dei voli. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1.
+\end{DoxyReturn}
+Questa funzione permette di ricercare dei voli secondo un determinato criterio. Inizialmente viene mostrato all\textquotesingle{}utente un menu\textquotesingle{} dove vengono indicati i vari campi per i quali ricercare un volo. Una volta selezionato uno tra i criteri da ricercare,verranno chiamate altre funzioni. \begin{DoxyPrecond}{Precondizione}
+voli deve contenere tutti i dati dei voli 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero effettivo dei passeggeri 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Attraverso altre funzioni presenti in questa funzione, verranno ricercati e successivamente visualizzati i voli, secondo un criterio inserito dall\textquotesingle{}utente. 
+\end{DoxyPostcond}
+Variabile di tipo volo utilizzata per contenere uno dei campi del passeggero ricercato
+
+Variabile di tipo passeggero utilizzata per prendere successivamente la data del sistema.
+
+Vettore \char`\"{}giorno\char`\"{} che contiene il giorno di volo del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sul giorno di volo inserito.
+
+Vettore \char`\"{}mese\char`\"{} che contiene il mese di volo del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sul mese di volo inserito.
+
+Vettore \char`\"{}anno\char`\"{} che contiene l\textquotesingle{}anno di volo del nuovo volo. Lo dichiaro char in modo tale da effettuare vari controlli sull\textquotesingle{}anno di volo inserito
+
+Variabile che conterra\textquotesingle{} 1 se il giorno di volo e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il mese e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}anno e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la data inserita e\textquotesingle{} reale,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la data inserita e\textquotesingle{} corretta, cioe\textquotesingle{} e\textquotesingle{} successiva alla data del sistema,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il nome della compagnia e\textquotesingle{} stata inserita correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la destinazione e\textquotesingle{} stata inserita correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} il giorno del sistema
+
+Variabile che conterra\textquotesingle{} il mese del sistema.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}anno del sistema.
+
+Variabile che conterra\textquotesingle{} 1 se il nome della compagnia inserito e\textquotesingle{} presente tra i voli esistenti
+
+Variabile che conterra\textquotesingle{} 1 se la destinazione inserita e\textquotesingle{} presente tra i voli esistenti
+
+Variabile che conterra\textquotesingle{} 1 se il giorno di volo inserito e\textquotesingle{} presente tra i voli esistenti
+
+Variabile utilizzata per uscire dal ciclo.
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} la scelta inserita, relativa a quale campo si vuole modificare.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un nome di una compagnia finche\textquotesingle{} non inserisce un nome valido di un volo esistente.
+
+Ciclo che permette all\textquotesingle{}utente di inserire una destinazione finche\textquotesingle{} non inserisce una destinazione valida di un volo esistente.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un giorno finche\textquotesingle{} non inserisce un giorno reale e presente tra i voli.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un giorno finche\textquotesingle{} non inserisce un giorno valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un mese finche\textquotesingle{} non inserisce un giorno valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un anno finche\textquotesingle{} non inserisce un giorno valido.
+
+Se l\textquotesingle{}utente non inserisce una tra le scelte presenti nel menu\textquotesingle{}, dovra\textquotesingle{} inserire una nuova scelta \mbox{\Hypertarget{volo_8h_a9cdbcf23d2adb566704d88af9bf5b04e}\label{volo_8h_a9cdbcf23d2adb566704d88af9bf5b04e}} 
+\index{volo.\+h@{volo.\+h}!salvataggio\+\_\+su\+\_\+file\+\_\+voli@{salvataggio\+\_\+su\+\_\+file\+\_\+voli}}
+\index{salvataggio\+\_\+su\+\_\+file\+\_\+voli@{salvataggio\+\_\+su\+\_\+file\+\_\+voli}!volo.\+h@{volo.\+h}}
+\subsubsection{\texorpdfstring{salvataggio\+\_\+su\+\_\+file\+\_\+voli()}{salvataggio\_su\_file\_voli()}}
+{\footnotesize\ttfamily int salvataggio\+\_\+su\+\_\+file\+\_\+voli (\begin{DoxyParamCaption}\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di salvare i dati sul file voli. 
+\begin{DoxyParams}{Parametri}
+{\em voli} & array di struct che conterra\textquotesingle{} tutti i dati dei voli \\
+\hline
+{\em numero\+\_\+di\+\_\+voli} & numero dei voli \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+corretto cioe\textquotesingle{} 1 se la funzione ha salvato i dati, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione salva i dati dall\textquotesingle{}array di struct voli al file dei voli. Viene chiamata ogni volta che viene effettuata un\textquotesingle{}operazione, in modo da aggiornare costantemente il file voli e quindi i dati. \begin{DoxyPrecond}{Precondizione}
+numero\+\_\+di\+\_\+voli deve contenere il numero effettivo dei voli 
+
+voli deve contenere tutti i dati dei voli 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati dei voli verranno salvati sul file. 
+\end{DoxyPostcond}
+Scrivo tutti i dati presenti nell array di struct nel file, salvando quindi i dati. \mbox{\Hypertarget{volo_8h_ac2f7eb05eed6b32ade58281240b0f035}\label{volo_8h_ac2f7eb05eed6b32ade58281240b0f035}} 
+\index{volo.\+h@{volo.\+h}!visualizza\+\_\+un\+\_\+volo@{visualizza\+\_\+un\+\_\+volo}}
+\index{visualizza\+\_\+un\+\_\+volo@{visualizza\+\_\+un\+\_\+volo}!volo.\+h@{volo.\+h}}
+\subsubsection{\texorpdfstring{visualizza\+\_\+un\+\_\+volo()}{visualizza\_un\_volo()}}
+{\footnotesize\ttfamily int visualizza\+\_\+un\+\_\+volo (\begin{DoxyParamCaption}\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli,  }\item[{int}]{indice\+\_\+volo }\end{DoxyParamCaption})}
+
+Questa funzione permette di visualizzare un determinato volo. 
+\begin{DoxyParams}{Parametri}
+{\em voli} & array di struct che conterra\textquotesingle{} tutti i dati dei voli \\
+\hline
+{\em numero\+\_\+di\+\_\+voli} & numero dei voli \\
+\hline
+{\em indice\+\_\+volo} & l\textquotesingle{}indice del volo che si vuole visualizzare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1.
+\end{DoxyReturn}
+Questa funzione permette di visualizzare un determinato volo. Viene chiamata ogni volta che nel programma c\textquotesingle{}e\textquotesingle{} bisogno di visualizzare un volo, ad esempio quando si modifica o si elimina un volo. \begin{DoxyPrecond}{Precondizione}
+voli deve contenere tutti i dati dei voli 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero effettivo dei voli 
+
+indice\+\_\+volo deve contenere l\textquotesingle{}indice del volo che si vuole visualizzare. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di un determinato volo vengono visualizzati sul terminale. 
+\end{DoxyPostcond}
+Vizualizzo un determinato volo, ma se ha il nome compagnia vuoto(cioe\textquotesingle{} e\textquotesingle{} stato eliminato) non lo visualizzo. \mbox{\Hypertarget{volo_8h_a245fdac0435ad469dfe3b27b616e4e2c}\label{volo_8h_a245fdac0435ad469dfe3b27b616e4e2c}} 
+\index{volo.\+h@{volo.\+h}!visualizza\+\_\+voli@{visualizza\+\_\+voli}}
+\index{visualizza\+\_\+voli@{visualizza\+\_\+voli}!volo.\+h@{volo.\+h}}
+\subsubsection{\texorpdfstring{visualizza\+\_\+voli()}{visualizza\_voli()}}
+{\footnotesize\ttfamily int visualizza\+\_\+voli (\begin{DoxyParamCaption}\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+voli }\end{DoxyParamCaption})}
+
+Questa funzione permette di visualizzare tutti i voli presenti nel progetto. 
+\begin{DoxyParams}{Parametri}
+{\em voli} & array di struct che conterra\textquotesingle{} tutti i dati dei voli \\
+\hline
+{\em numero\+\_\+di\+\_\+voli} & numero dei voli \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1.
+\end{DoxyReturn}
+Questa funzione permette di visualizzare tutti i voli presenti nel progetto. Vengono visualizzati tutti i voli,tranne quelli che sono stati elimininati. \begin{DoxyPrecond}{Precondizione}
+voli deve contenere tutti i dati dei voli 
+
+numero\+\_\+di\+\_\+voli deve contenere il numero effettivo dei voli 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di ciascun volo vengono visualizzati nel terminale. 
+\end{DoxyPostcond}
+Vizualizzo tutti i voli, eccetto chi ha il nome vuoto, cioe\textquotesingle{} e\textquotesingle{} stato eliminato. 

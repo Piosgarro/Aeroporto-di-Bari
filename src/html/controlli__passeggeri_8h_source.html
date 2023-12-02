@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AeroportodiBari-Gruppo18:  File sorgente controlli_passeggeri.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">AeroportodiBari-Gruppo18
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">controlli_passeggeri.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="controlli__passeggeri_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef CONTROLLI_PASSEGGERI_H_</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define CONTROLLI_PASSEGGERI_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data_8h.html">data.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__passeggeri_8h.html#a82a3e14e6f5184a69aae4b076ac3829c">controllo_Stringa_passeggero</a>(<span class="keywordtype">char</span> stringa[]);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__passeggeri_8h.html#abeddc7b55f33b2a8571863b307108776">controllo_Passaporto</a>(<span class="keywordtype">char</span> passaporto[]);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__passeggeri_8h.html#a966c4611f213a01f56d8fd99a7ebc88e">controllo_giorno_data_di_nascita</a>(<span class="keywordtype">char</span> giorno1[],<span class="keywordtype">int</span>* giorno_data_di_nascita);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__passeggeri_8h.html#ae51505fc670b52201ce316a05a6bab1b">controllo_mese_data_di_nascita</a>(<span class="keywordtype">char</span> mese1[],<span class="keywordtype">int</span>* mese_data_di_nascita);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__passeggeri_8h.html#a59197c252d125b851d68535e7e650ac8">controllo_anno_data_di_nascita</a>(<span class="keywordtype">char</span> anno1[],<span class="keywordtype">int</span>* anno_data_di_nascita);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controlli__passeggeri_8h.html#a73d3c6082d95fb2f0e1dd55bd2644a23">controllo_generale_sulla_data</a>(<a class="code" href="structdata.html">data</a> data_nascita);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONTROLLI_PASSEGGERI_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="controlli__passeggeri_8h_html_a59197c252d125b851d68535e7e650ac8"><div class="ttname"><a href="controlli__passeggeri_8h.html#a59197c252d125b851d68535e7e650ac8">controllo_anno_data_di_nascita</a></div><div class="ttdeci">int controllo_anno_data_di_nascita(char anno1[], int *anno_data_di_nascita)</div><div class="ttdef"><b>Definition:</b> controlli_passeggeri.c:240</div></div>
+<div class="ttc" id="controlli__passeggeri_8h_html_a73d3c6082d95fb2f0e1dd55bd2644a23"><div class="ttname"><a href="controlli__passeggeri_8h.html#a73d3c6082d95fb2f0e1dd55bd2644a23">controllo_generale_sulla_data</a></div><div class="ttdeci">int controllo_generale_sulla_data(data data_nascita)</div><div class="ttdef"><b>Definition:</b> controlli_passeggeri.c:291</div></div>
+<div class="ttc" id="controlli__passeggeri_8h_html_a82a3e14e6f5184a69aae4b076ac3829c"><div class="ttname"><a href="controlli__passeggeri_8h.html#a82a3e14e6f5184a69aae4b076ac3829c">controllo_Stringa_passeggero</a></div><div class="ttdeci">int controllo_Stringa_passeggero(char stringa[])</div><div class="ttdef"><b>Definition:</b> controlli_passeggeri.c:22</div></div>
+<div class="ttc" id="data_8h_html"><div class="ttname"><a href="data_8h.html">data.h</a></div></div>
+<div class="ttc" id="controlli__passeggeri_8h_html_a966c4611f213a01f56d8fd99a7ebc88e"><div class="ttname"><a href="controlli__passeggeri_8h.html#a966c4611f213a01f56d8fd99a7ebc88e">controllo_giorno_data_di_nascita</a></div><div class="ttdeci">int controllo_giorno_data_di_nascita(char giorno1[], int *giorno_data_di_nascita)</div><div class="ttdef"><b>Definition:</b> controlli_passeggeri.c:139</div></div>
+<div class="ttc" id="controlli__passeggeri_8h_html_abeddc7b55f33b2a8571863b307108776"><div class="ttname"><a href="controlli__passeggeri_8h.html#abeddc7b55f33b2a8571863b307108776">controllo_Passaporto</a></div><div class="ttdeci">int controllo_Passaporto(char passaporto[])</div><div class="ttdef"><b>Definition:</b> controlli_passeggeri.c:82</div></div>
+<div class="ttc" id="controlli__passeggeri_8h_html_ae51505fc670b52201ce316a05a6bab1b"><div class="ttname"><a href="controlli__passeggeri_8h.html#ae51505fc670b52201ce316a05a6bab1b">controllo_mese_data_di_nascita</a></div><div class="ttdeci">int controllo_mese_data_di_nascita(char mese1[], int *mese_data_di_nascita)</div><div class="ttdef"><b>Definition:</b> controlli_passeggeri.c:190</div></div>
+<div class="ttc" id="structdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> data.h:11</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

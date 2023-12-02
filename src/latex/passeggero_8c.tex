@@ -1,0 +1,365 @@
+\hypertarget{passeggero_8c}{}\section{Riferimenti per il file passeggero.\+c}
+\label{passeggero_8c}\index{passeggero.\+c@{passeggero.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}controlli\+\_\+passeggeri.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}passeggero.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}costanti.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data\+\_\+di\+\_\+iscrizione.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}svuota\+\_\+buffer.\+h\char`\"{}}\newline
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{passeggero_8c_a3d73ed6aca33f19e3cf49bc2dff530f3}{numero\+\_\+di\+\_\+passeggeri} ()
+\item 
+int \hyperlink{passeggero_8c_a678601a8069e20df78fab0967d57e498}{caricamento\+\_\+persone} (\hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+passeggeri)
+\item 
+int \hyperlink{passeggero_8c_adc87dca1a22bf97ae82102eaa988bc2e}{salvataggio\+\_\+su\+\_\+file\+\_\+passeggeri} (\hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+passeggeri)
+\item 
+int \hyperlink{passeggero_8c_a5e6b6b51b305246aabd28897b6d67f5a}{visualizza\+\_\+passeggeri} (\hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+passeggeri)
+\item 
+int \hyperlink{passeggero_8c_a62b49218c901c6b80b0bdfeebeb599d5}{visualizza\+\_\+un\+\_\+passeggero} (\hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+passeggeri, int indice\+\_\+passeggero)
+\item 
+int \hyperlink{passeggero_8c_a521ab37c18757bc56f66ef93ce8f7890}{inserisci\+\_\+nuovo\+\_\+utente} (\hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+passeggeri)
+\item 
+int \hyperlink{passeggero_8c_acd1ebb9b5ff62df0eb162133cdb3f79b}{modifica\+\_\+utente} (\hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+passeggeri)
+\item 
+int \hyperlink{passeggero_8c_a9427c320c59b7d234a665b1ea9eb4bd9}{elimina\+\_\+utente} (\hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int numero\+\_\+passeggeri)
+\item 
+int \hyperlink{passeggero_8c_aa4cfbd45ca02c49cf1921d6383999583}{ricerca\+\_\+per\+\_\+nome} (\hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, char stringa\mbox{[}$\,$\mbox{]}, int numero\+\_\+dei\+\_\+passeggeri)
+\item 
+int \hyperlink{passeggero_8c_ae05a2531036a7c50f267faaee1158797}{ricerca\+\_\+per\+\_\+cognome} (\hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, char stringa\mbox{[}$\,$\mbox{]}, int numero\+\_\+dei\+\_\+passeggeri)
+\item 
+int \hyperlink{passeggero_8c_a2536a7c6ac4027dedfd439a260e3f804}{ricerca\+\_\+per\+\_\+data\+\_\+di\+\_\+nascita} (\hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, \hyperlink{structdata}{data} data\+\_\+ricercata, int numero\+\_\+dei\+\_\+passeggeri)
+\item 
+int \hyperlink{passeggero_8c_af20c7820b6c01db42de63dbb0d2bf385}{ricerca\+\_\+passeggeri} (\hyperlink{structpasseggero}{passeggero} persona\mbox{[}$\,$\mbox{]}, int \hyperlink{passeggero_8h_a3d73ed6aca33f19e3cf49bc2dff530f3}{numero\+\_\+di\+\_\+passeggeri})
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+\begin{DoxyAuthor}{Autori}
+Sgarro Vincenzo Pio, Sokoli Afrim 
+\end{DoxyAuthor}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{passeggero_8c_a678601a8069e20df78fab0967d57e498}\label{passeggero_8c_a678601a8069e20df78fab0967d57e498}} 
+\index{passeggero.\+c@{passeggero.\+c}!caricamento\+\_\+persone@{caricamento\+\_\+persone}}
+\index{caricamento\+\_\+persone@{caricamento\+\_\+persone}!passeggero.\+c@{passeggero.\+c}}
+\subsubsection{\texorpdfstring{caricamento\+\_\+persone()}{caricamento\_persone()}}
+{\footnotesize\ttfamily int caricamento\+\_\+persone (\begin{DoxyParamCaption}\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+passeggeri }\end{DoxyParamCaption})}
+
+Questa funzione carica i dati dal file passeggeri all\textquotesingle{}array di struct persona per permettere di lavorare su quei dati. \begin{DoxyPrecond}{Precondizione}
+numero\+\_\+passeggeri deve contenere il numero effettivo dei passeggeri 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+L\textquotesingle{}array di struct persona conterra\textquotesingle{} tutti i dati dei passeggeri. 
+\end{DoxyPostcond}
+Leggo tutti i dati dei passeggeri dal file e li salvo sull array di struct \mbox{\Hypertarget{passeggero_8c_a9427c320c59b7d234a665b1ea9eb4bd9}\label{passeggero_8c_a9427c320c59b7d234a665b1ea9eb4bd9}} 
+\index{passeggero.\+c@{passeggero.\+c}!elimina\+\_\+utente@{elimina\+\_\+utente}}
+\index{elimina\+\_\+utente@{elimina\+\_\+utente}!passeggero.\+c@{passeggero.\+c}}
+\subsubsection{\texorpdfstring{elimina\+\_\+utente()}{elimina\_utente()}}
+{\footnotesize\ttfamily int elimina\+\_\+utente (\begin{DoxyParamCaption}\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+passeggeri }\end{DoxyParamCaption})}
+
+Questa funzione permette di eliminare un passeggero. Inizialmente viene controllato che l\textquotesingle{}id del passeggero da eliminare e\textquotesingle{} stato inserito corretamente. Infine vengono eliminati i dati del passeggero. \begin{DoxyPrecond}{Precondizione}
+persona deve contenere tutti i dati dei passeggeri 
+
+numero\+\_\+passeggeri deve contenere il numero effettivo dei passeggeri 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Il passeggero selezionato dall\textquotesingle{}utente verra\textquotesingle{} eliminato e i suoi dati non verranno visualizzati nell\textquotesingle{}array di struct. 
+\end{DoxyPostcond}
+Variabile che conterrà 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} tra i passeggeri esistenti,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice del passeggero da eliminare.
+
+Decremento di 1 la scelta inserita dall\textquotesingle{}utente per risalire all\textquotesingle{}indice di quel passeggero.
+
+Oltre al controllo del range dei passeggeri esistenti, controllo anche se un passeggero e\textquotesingle{} stato gia\textquotesingle{} eliminato \mbox{\Hypertarget{passeggero_8c_a521ab37c18757bc56f66ef93ce8f7890}\label{passeggero_8c_a521ab37c18757bc56f66ef93ce8f7890}} 
+\index{passeggero.\+c@{passeggero.\+c}!inserisci\+\_\+nuovo\+\_\+utente@{inserisci\+\_\+nuovo\+\_\+utente}}
+\index{inserisci\+\_\+nuovo\+\_\+utente@{inserisci\+\_\+nuovo\+\_\+utente}!passeggero.\+c@{passeggero.\+c}}
+\subsubsection{\texorpdfstring{inserisci\+\_\+nuovo\+\_\+utente()}{inserisci\_nuovo\_utente()}}
+{\footnotesize\ttfamily int inserisci\+\_\+nuovo\+\_\+utente (\begin{DoxyParamCaption}\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+passeggeri }\end{DoxyParamCaption})}
+
+Questa funzione permette di inserire un nuovo passeggero. Inizialmente vengono controllati che i dati del nuovo passeggero vengano inseriti correttamente. Infine vengono memorizzati i dati del nuovo passeggero nell\textquotesingle{}ultima posizione dell\textquotesingle{}array di struct. \begin{DoxyPrecond}{Precondizione}
+persona deve contenere tutti i dati dei passeggeri.\+In particolare in questa funzione serve per memorizzare i dati del nuovo passeggero inserito. 
+
+numero\+\_\+passeggeri deve contenere il numero effettivo dei passeggeri 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati del nuovo passeggero verranno salvati nell\textquotesingle{}ultima posizione dell\textquotesingle{}array di struct persona. 
+\end{DoxyPostcond}
+Variabile di tipo passeggero utilizzata contenere i dati del nuovo passeggero inseriti dall\textquotesingle{}utente.
+
+Vettore \char`\"{}giorno\char`\"{} che contiene il giorno di nascita del nuovo utente. Lo dichiaro char in modo tale da effettuare vari controlli sul giorno inserito.
+
+Dichiaro un vettore \char`\"{}mese\char`\"{} che contiene il mese di nascita del nuovo utente. Lo dichiaro char in modo tale da effettuare vari controlli sul mese inserito.
+
+Dichiaro un vettore \char`\"{}anno\char`\"{} che contiene l\textquotesingle{}anno di nascita del nuovo utente. Lo dichiaro char in modo tale da effettuare vari controlli sull\textquotesingle{}anno inserito.
+
+Variabile che conterra\textquotesingle{} 1 se il nome e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il giorno di nascita e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il mese di nascita e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}anno di nascita e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la data di nascita inserita è reale,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il cognome e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il codice del passaporto e\textquotesingle{} stato inserito correttamente, 0 altrimenti.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un nome finche\textquotesingle{} non inserisce un nome valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un cognome finche\textquotesingle{} non inserisce un nome valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire una data finche\textquotesingle{} non inserisce una data reale.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un giorno finche\textquotesingle{} non inserisce un giorno valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un mese finche\textquotesingle{} non inserisce un mese valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un anno finche\textquotesingle{} non inserisce un anno valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un passaporto finche\textquotesingle{} non inserisce un passaporto valido. \mbox{\Hypertarget{passeggero_8c_acd1ebb9b5ff62df0eb162133cdb3f79b}\label{passeggero_8c_acd1ebb9b5ff62df0eb162133cdb3f79b}} 
+\index{passeggero.\+c@{passeggero.\+c}!modifica\+\_\+utente@{modifica\+\_\+utente}}
+\index{modifica\+\_\+utente@{modifica\+\_\+utente}!passeggero.\+c@{passeggero.\+c}}
+\subsubsection{\texorpdfstring{modifica\+\_\+utente()}{modifica\_utente()}}
+{\footnotesize\ttfamily int modifica\+\_\+utente (\begin{DoxyParamCaption}\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+passeggeri }\end{DoxyParamCaption})}
+
+Questa funzione permette di modificare i dati di un passeggero esistente. Inizialmente viene chiesto all\textquotesingle{}utente di scegliere uno tra i passeggeri presenti da modificare. Successivamente gli viene mostrato un secondo menu\textquotesingle{} dove vengono indicati i vari campi di quel passeggero da modificare. Una volta modificato uno tra quei campi, il passeggero scelto dall\textquotesingle{}utente verra\textquotesingle{} modificato. \begin{DoxyPrecond}{Precondizione}
+persona deve contenere tutti i dati dei passeggeri 
+
+numero\+\_\+passeggeri deve contenere il numero effettivo dei passeggeri 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di un determinato passeggero verranno modificati. 
+\end{DoxyPostcond}
+Variabile di tipo passeggero utilizzata per contenere uno dei campi modificati inseriti dall\textquotesingle{}utente
+
+Vettore che conterra\textquotesingle{} il giorno inserito dall\textquotesingle{}utente
+
+Vettore che conterra\textquotesingle{} il mese inserito dall\textquotesingle{}utente
+
+Vettore che conterra\textquotesingle{} l\textquotesingle{}anno inserito dall\textquotesingle{}utente
+
+Variabile che conterra\textquotesingle{} 1 se il nome e\textquotesingle{} stato inserito correttamente, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il giorno e\textquotesingle{} stato inserito correttamente, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il mese e\textquotesingle{} stato inserito correttamente, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}anno e\textquotesingle{} stato inserito correttamente, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la data inserita e\textquotesingle{} reale, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il cognome e\textquotesingle{} stato inserito correttamente, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il passaporto e\textquotesingle{} stato inserito correttamente, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} l\textquotesingle{}indice del passeggero da modificare
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} tra i passeggeri esistenti, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} un numero, 0 altrimenti.
+
+Variabile che conterra\textquotesingle{} la scelta inserita, relativa a quale campo si vuole modificare.
+
+Variabile utilizzata per uscire dal ciclo.
+
+Decremento di 1 la scelta inserita dall\textquotesingle{}utente per risalire all\textquotesingle{}indice di quel passeggero.
+
+Oltre al controllo del range dei passeggeri esistenti, controllo anche se un passeggero e\textquotesingle{} stato eliminato.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un nome finche\textquotesingle{} non inserisce un nome valido.
+
+Il campo modificato dall\textquotesingle{}utente viene salvato in quella posizione dell\textquotesingle{}array di struct dei passeggeri.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un cognome finche\textquotesingle{} non inserisce un nome valido.
+
+Il campo modificato dall\textquotesingle{}utente viene salvato in quella posizione dell\textquotesingle{}array di struct dei passeggeri.
+
+Ciclo che permette all\textquotesingle{}utente di inserire una data finche\textquotesingle{} non inserisce una data reale.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un giorno finche\textquotesingle{} non inserisce un giorno valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un mese finche\textquotesingle{} non inserisce un mese valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un anno finche\textquotesingle{} non inserisce un anno valido.
+
+Il campo modificato dall\textquotesingle{}utente viene salvato in quella posizione dell\textquotesingle{}array di struct dei passeggeri.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un passaporto finche\textquotesingle{} non inserisce un passaporto valido.
+
+Il campo modificato dall\textquotesingle{}utente viene salvato in quella posizione dell\textquotesingle{}array di struct dei passeggeri.
+
+Se l\textquotesingle{}utente non inserisce una tra le scelte presenti nel menu\textquotesingle{}, dovra\textquotesingle{} inserire una nuova scelta \mbox{\Hypertarget{passeggero_8c_a3d73ed6aca33f19e3cf49bc2dff530f3}\label{passeggero_8c_a3d73ed6aca33f19e3cf49bc2dff530f3}} 
+\index{passeggero.\+c@{passeggero.\+c}!numero\+\_\+di\+\_\+passeggeri@{numero\+\_\+di\+\_\+passeggeri}}
+\index{numero\+\_\+di\+\_\+passeggeri@{numero\+\_\+di\+\_\+passeggeri}!passeggero.\+c@{passeggero.\+c}}
+\subsubsection{\texorpdfstring{numero\+\_\+di\+\_\+passeggeri()}{numero\_di\_passeggeri()}}
+{\footnotesize\ttfamily int numero\+\_\+di\+\_\+passeggeri (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Questa funzione permette di calcolare il numero dei passeggeri aprendo il file e contando tutti i passeggeri Viene chiamata ad ogni operazione fatta perchè se viene aggiunto un passeggero, il numero dei passeggeri deve essere aggiornato. \begin{DoxyPostcond}{Postcondizione}
+il numero dei passeggeri presenti nel file passeggeri. 
+\end{DoxyPostcond}
+Leggo tutti i dati dei passeggeri e ogni volta incremento la i \mbox{\Hypertarget{passeggero_8c_af20c7820b6c01db42de63dbb0d2bf385}\label{passeggero_8c_af20c7820b6c01db42de63dbb0d2bf385}} 
+\index{passeggero.\+c@{passeggero.\+c}!ricerca\+\_\+passeggeri@{ricerca\+\_\+passeggeri}}
+\index{ricerca\+\_\+passeggeri@{ricerca\+\_\+passeggeri}!passeggero.\+c@{passeggero.\+c}}
+\subsubsection{\texorpdfstring{ricerca\+\_\+passeggeri()}{ricerca\_passeggeri()}}
+{\footnotesize\ttfamily int ricerca\+\_\+passeggeri (\begin{DoxyParamCaption}\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+di\+\_\+passeggeri }\end{DoxyParamCaption})}
+
+Questa funzione permette di ricercare dei passeggeri secondo un determinato criterio. Inizialmente viene mostrato all\textquotesingle{}utente un menu\textquotesingle{} dove vengono indicati i vari campi per i quali ricercare un passeggero. Una volta selezionato uno tra i criteri da ricercare,verranno chiamate altre funzioni. \begin{DoxyPrecond}{Precondizione}
+persona deve contenere tutti i dati dei passeggeri 
+
+numero\+\_\+di\+\_\+passeggeri deve contenere il numero effettivo dei passeggeri 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Attraverso altre funzioni presenti in questa funzione, verranno ricercati e successivamente visualizzati i passeggeri, secondo un criterio inserito dall\textquotesingle{}utente. 
+\end{DoxyPostcond}
+Variabile che conterra\textquotesingle{} la scelta inserita in base a quale campo si vuole ricercare.
+
+Variabile che conterra\textquotesingle{} 1 se la scelta inserita sara\textquotesingle{} un numero,0 altrimenti.
+
+V\+Ariabile utilizzata per uscire dal ciclo.
+
+Variabile che conterra\textquotesingle{} 1 se il nome e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il nome inserito e\textquotesingle{} presente tra i passeggeri esistenti.
+
+Variabile che conterra\textquotesingle{} 1 se il cognome e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il cognome inserito e\textquotesingle{} presente tra i passeggeri esistenti.
+
+Variabile che conterra\textquotesingle{} 1 se il giorno di nascita e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se il mese di nascita e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se l\textquotesingle{}anno di nascita e\textquotesingle{} stato inserito correttamente,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la data di nascita inserita è reale,0 altrimenti.
+
+Variabile che conterra\textquotesingle{} 1 se la data di nascita inserita e\textquotesingle{} presente tra i passeggeri esistenti.
+
+Vettore che conterra\textquotesingle{} il giorno che si vuole ricercare
+
+Vettore che conterra\textquotesingle{} il mese che si vuole ricercare
+
+Vettore che conterra\textquotesingle{} l\textquotesingle{}anno che si vuole ricercare
+
+Variabile di tipo passeggero utilizzata per contenere uno dei campi del passeggero ricercato.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un nome finche\textquotesingle{} non inserisce un nome valido di un passeggero esistente.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un cognome finche\textquotesingle{} non inserisce un cognome di un passeggero esistente.
+
+Ciclo che permette all\textquotesingle{}utente di inserire una data finche\textquotesingle{} non inserisce una data reale e presente tra i passeggeri.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un giorno finche\textquotesingle{} non inserisce un giorno valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un mese finche\textquotesingle{} non inserisce un mese valido.
+
+Ciclo che permette all\textquotesingle{}utente di inserire un anno finche\textquotesingle{} non inserisce un anno valido.
+
+Se l\textquotesingle{}utente non inserisce una tra le scelte presenti nel menu\textquotesingle{}, dovra\textquotesingle{} inserire una nuova scelta \mbox{\Hypertarget{passeggero_8c_ae05a2531036a7c50f267faaee1158797}\label{passeggero_8c_ae05a2531036a7c50f267faaee1158797}} 
+\index{passeggero.\+c@{passeggero.\+c}!ricerca\+\_\+per\+\_\+cognome@{ricerca\+\_\+per\+\_\+cognome}}
+\index{ricerca\+\_\+per\+\_\+cognome@{ricerca\+\_\+per\+\_\+cognome}!passeggero.\+c@{passeggero.\+c}}
+\subsubsection{\texorpdfstring{ricerca\+\_\+per\+\_\+cognome()}{ricerca\_per\_cognome()}}
+{\footnotesize\ttfamily int ricerca\+\_\+per\+\_\+cognome (\begin{DoxyParamCaption}\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{char}]{stringa\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+dei\+\_\+passeggeri }\end{DoxyParamCaption})}
+
+Questa funzione permette di cercare il cognome inserito in precedenza dall\textquotesingle{}utente, controllando che sia presente tra quelli inseriti nel file. Inoltre una volta trovato quel cognome, verranno visualizzati i dati di quel passeggero, o eventualmente dei passeggeri che hanno quel cognome. \begin{DoxyPrecond}{Precondizione}
+persona deve contenere tutti i dati dei passeggeri 
+
+stringa deve contenere il cognome inserito dall\textquotesingle{}utente per cui si vuole effettuare una ricerca 
+
+numero\+\_\+dei\+\_\+passeggeri deve contenere il numero effettivo dei passeggeri 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di quel o di quei passeggeri cercati, che saranno attraverso una funzione visualizzati all\textquotesingle{}utente. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{passeggero_8c_a2536a7c6ac4027dedfd439a260e3f804}\label{passeggero_8c_a2536a7c6ac4027dedfd439a260e3f804}} 
+\index{passeggero.\+c@{passeggero.\+c}!ricerca\+\_\+per\+\_\+data\+\_\+di\+\_\+nascita@{ricerca\+\_\+per\+\_\+data\+\_\+di\+\_\+nascita}}
+\index{ricerca\+\_\+per\+\_\+data\+\_\+di\+\_\+nascita@{ricerca\+\_\+per\+\_\+data\+\_\+di\+\_\+nascita}!passeggero.\+c@{passeggero.\+c}}
+\subsubsection{\texorpdfstring{ricerca\+\_\+per\+\_\+data\+\_\+di\+\_\+nascita()}{ricerca\_per\_data\_di\_nascita()}}
+{\footnotesize\ttfamily int ricerca\+\_\+per\+\_\+data\+\_\+di\+\_\+nascita (\begin{DoxyParamCaption}\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{structdata}{data}}]{data\+\_\+ricercata,  }\item[{int}]{numero\+\_\+dei\+\_\+passeggeri }\end{DoxyParamCaption})}
+
+Questa funzione permette di cercare la data di nascita inserita in precedenza dall\textquotesingle{}utente, controllando che sia presente tra quelle inserite nel file. Inoltre una volta trovata quella data di nascita, verranno visualizzati i dati di quel passeggero, o eventualmente dei passeggeri che sono nati in quella data. \begin{DoxyPrecond}{Precondizione}
+persona deve contenere tutti i dati dei passeggeri 
+
+data\+\_\+ricercata deve contenere la data di nascita inserita dall\textquotesingle{}utente per cui si vuole effettuare una ricerca 
+
+numero\+\_\+dei\+\_\+passeggeri deve contenere il numero effettivo dei passeggeri 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di quel o di quei passeggeri cercati, che saranno attraverso una funzione visualizzati all\textquotesingle{}utente. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{passeggero_8c_aa4cfbd45ca02c49cf1921d6383999583}\label{passeggero_8c_aa4cfbd45ca02c49cf1921d6383999583}} 
+\index{passeggero.\+c@{passeggero.\+c}!ricerca\+\_\+per\+\_\+nome@{ricerca\+\_\+per\+\_\+nome}}
+\index{ricerca\+\_\+per\+\_\+nome@{ricerca\+\_\+per\+\_\+nome}!passeggero.\+c@{passeggero.\+c}}
+\subsubsection{\texorpdfstring{ricerca\+\_\+per\+\_\+nome()}{ricerca\_per\_nome()}}
+{\footnotesize\ttfamily int ricerca\+\_\+per\+\_\+nome (\begin{DoxyParamCaption}\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{char}]{stringa\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+dei\+\_\+passeggeri }\end{DoxyParamCaption})}
+
+Questa funzione permette di cercare il nome inserito in precedenza dall\textquotesingle{}utente, controllando che sia presente tra quelli inseriti nel file. Inoltre una volta trovato quel nome, verranno visualizzati i dati di quel passeggero, o eventualmente dei passeggeri che hanno quel nome. \begin{DoxyPrecond}{Precondizione}
+persona deve contenere tutti i dati dei passeggeri 
+
+stringa deve contenere il nome inserito dall\textquotesingle{}utente per cui si vuole effettuare una ricerca 
+
+numero\+\_\+dei\+\_\+passeggeri deve contenere il numero effettivo dei passeggeri 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di quel o di quei passeggeri cercati, che saranno attraverso una funzione visualizzati all\textquotesingle{}utente. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{passeggero_8c_adc87dca1a22bf97ae82102eaa988bc2e}\label{passeggero_8c_adc87dca1a22bf97ae82102eaa988bc2e}} 
+\index{passeggero.\+c@{passeggero.\+c}!salvataggio\+\_\+su\+\_\+file\+\_\+passeggeri@{salvataggio\+\_\+su\+\_\+file\+\_\+passeggeri}}
+\index{salvataggio\+\_\+su\+\_\+file\+\_\+passeggeri@{salvataggio\+\_\+su\+\_\+file\+\_\+passeggeri}!passeggero.\+c@{passeggero.\+c}}
+\subsubsection{\texorpdfstring{salvataggio\+\_\+su\+\_\+file\+\_\+passeggeri()}{salvataggio\_su\_file\_passeggeri()}}
+{\footnotesize\ttfamily int salvataggio\+\_\+su\+\_\+file\+\_\+passeggeri (\begin{DoxyParamCaption}\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+passeggeri }\end{DoxyParamCaption})}
+
+Questa funzione salva i dati dall\textquotesingle{}array di struct persona al file dei passeggeri. Viene chiamata ogni volta che viene effettuata un\textquotesingle{}operazione, in modo da aggiornare costantemente il file passeggeri e quindi i dati. \begin{DoxyPrecond}{Precondizione}
+numero\+\_\+passeggeri deve contenere il numero effettivo dei passeggeri 
+
+persona deve contenere tutti i dati dei passeggeri 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati dei passeggeri verranno salvati sul file. 
+\end{DoxyPostcond}
+Scrivo tutti i dati presenti nell array di struct nel file, salvando quindi i dati. \mbox{\Hypertarget{passeggero_8c_a5e6b6b51b305246aabd28897b6d67f5a}\label{passeggero_8c_a5e6b6b51b305246aabd28897b6d67f5a}} 
+\index{passeggero.\+c@{passeggero.\+c}!visualizza\+\_\+passeggeri@{visualizza\+\_\+passeggeri}}
+\index{visualizza\+\_\+passeggeri@{visualizza\+\_\+passeggeri}!passeggero.\+c@{passeggero.\+c}}
+\subsubsection{\texorpdfstring{visualizza\+\_\+passeggeri()}{visualizza\_passeggeri()}}
+{\footnotesize\ttfamily int visualizza\+\_\+passeggeri (\begin{DoxyParamCaption}\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+passeggeri }\end{DoxyParamCaption})}
+
+Questa funzione permette di visualizzare tutti i passeggeri presenti nel progetto. Vengono visualizzati tutti i passeggeri,tranne quelli che sono stati elimininati. \begin{DoxyPrecond}{Precondizione}
+persona deve contenere tutti i dati dei passeggeri 
+
+numero\+\_\+passeggeri deve contenere il numero effettivo dei passeggeri 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di ciascun passeggero vengono visualizzati nel terminale. 
+\end{DoxyPostcond}
+Vizualizzo tutti i passeggeri, eccetto chi ha il nome vuoto, cioe\textquotesingle{} e\textquotesingle{} stato eliminato. \mbox{\Hypertarget{passeggero_8c_a62b49218c901c6b80b0bdfeebeb599d5}\label{passeggero_8c_a62b49218c901c6b80b0bdfeebeb599d5}} 
+\index{passeggero.\+c@{passeggero.\+c}!visualizza\+\_\+un\+\_\+passeggero@{visualizza\+\_\+un\+\_\+passeggero}}
+\index{visualizza\+\_\+un\+\_\+passeggero@{visualizza\+\_\+un\+\_\+passeggero}!passeggero.\+c@{passeggero.\+c}}
+\subsubsection{\texorpdfstring{visualizza\+\_\+un\+\_\+passeggero()}{visualizza\_un\_passeggero()}}
+{\footnotesize\ttfamily int visualizza\+\_\+un\+\_\+passeggero (\begin{DoxyParamCaption}\item[{\hyperlink{structpasseggero}{passeggero}}]{persona\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+passeggeri,  }\item[{int}]{indice\+\_\+passeggero }\end{DoxyParamCaption})}
+
+Questa funzione permette di visualizzare un determinato passeggero. Viene chiamata ogni volta che nel programma c\textquotesingle{}e\textquotesingle{} bisogno di visualizzare un passeggero, ad esempio quando si modifica o si elimina un passeggero. \begin{DoxyPrecond}{Precondizione}
+persona deve contenere tutti i dati dei passeggeri 
+
+numero\+\_\+passeggeri deve contenere il numero effettivo dei passeggeri 
+
+indice\+\_\+passeggero deve contenere l\textquotesingle{}indice del passeggero che si vuole visualizzare. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+I dati di un determinato passeggero vengono visualizzati sul terminale. 
+\end{DoxyPostcond}
+Vizualizzo un determinato passeggero, ma se ha il nome vuoto(cioe\textquotesingle{} e\textquotesingle{} stato eliminato) non lo visualizzo. 

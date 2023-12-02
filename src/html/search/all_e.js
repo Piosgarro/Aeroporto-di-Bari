@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['visualizza_5fpasseggeri',['visualizza_passeggeri',['../passeggero_8c.html#a5e6b6b51b305246aabd28897b6d67f5a',1,'visualizza_passeggeri(passeggero persona[], int numero_passeggeri):&#160;passeggero.c'],['../passeggero_8h.html#a5e6b6b51b305246aabd28897b6d67f5a',1,'visualizza_passeggeri(passeggero persona[], int numero_passeggeri):&#160;passeggero.c']]],
+  ['visualizza_5fprenotazioni',['visualizza_prenotazioni',['../prenotazione_8c.html#a342cf502cce4e417e221054cd456c355',1,'visualizza_prenotazioni(prenotazione prenotazione_persona[], int numero_prenotazioni):&#160;prenotazione.c'],['../prenotazione_8h.html#a342cf502cce4e417e221054cd456c355',1,'visualizza_prenotazioni(prenotazione prenotazione_persona[], int numero_prenotazioni):&#160;prenotazione.c']]],
+  ['visualizza_5fun_5fpasseggero',['visualizza_un_passeggero',['../passeggero_8c.html#a62b49218c901c6b80b0bdfeebeb599d5',1,'visualizza_un_passeggero(passeggero persona[], int numero_passeggeri, int indice_passeggero):&#160;passeggero.c'],['../passeggero_8h.html#a62b49218c901c6b80b0bdfeebeb599d5',1,'visualizza_un_passeggero(passeggero persona[], int numero_passeggeri, int indice_passeggero):&#160;passeggero.c']]],
+  ['visualizza_5fun_5fvolo',['visualizza_un_volo',['../volo_8c.html#ac2f7eb05eed6b32ade58281240b0f035',1,'visualizza_un_volo(volo voli[], int numero_di_voli, int indice_volo):&#160;volo.c'],['../volo_8h.html#ac2f7eb05eed6b32ade58281240b0f035',1,'visualizza_un_volo(volo voli[], int numero_di_voli, int indice_volo):&#160;volo.c']]],
+  ['visualizza_5funa_5fprenotazione',['visualizza_una_prenotazione',['../prenotazione_8c.html#acadb90a5c305e2578d6ddc27796df202',1,'visualizza_una_prenotazione(prenotazione prenotazione_persona[], int numero_prenotazioni, int indice_prenotazione):&#160;prenotazione.c'],['../prenotazione_8h.html#acadb90a5c305e2578d6ddc27796df202',1,'visualizza_una_prenotazione(prenotazione prenotazione_persona[], int numero_prenotazioni, int indice_prenotazione):&#160;prenotazione.c']]],
+  ['visualizza_5fvoli',['visualizza_voli',['../volo_8c.html#a245fdac0435ad469dfe3b27b616e4e2c',1,'visualizza_voli(volo voli[], int numero_di_voli):&#160;volo.c'],['../volo_8h.html#a245fdac0435ad469dfe3b27b616e4e2c',1,'visualizza_voli(volo voli[], int numero_di_voli):&#160;volo.c']]],
+  ['volo',['volo',['../structvolo.html',1,'']]],
+  ['volo_2ec',['volo.c',['../volo_8c.html',1,'']]],
+  ['volo_2eh',['volo.h',['../volo_8h.html',1,'']]]
+];

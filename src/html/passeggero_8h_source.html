@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AeroportodiBari-Gruppo18:  File sorgente passeggero.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">AeroportodiBari-Gruppo18
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">passeggero.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="passeggero_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef PASSEGGERO_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define PASSEGGERO_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data_8h.html">data.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="costanti_8h.html">costanti.h</a>&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structpasseggero.html">   13</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span>{</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structpasseggero.html#a7c93d49321aca33cb2a17618006ac331">   14</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpasseggero.html#a7c93d49321aca33cb2a17618006ac331">id_passeggero</a>;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structpasseggero.html#a6ab3d88e71633a8e7bef32160dacd50d">   15</a></span>&#160;    <span class="keywordtype">char</span> nome[<a class="code" href="costanti_8h.html#a1174c9cabf872f9154fcec903a6e0395">LUNGHEZZA_NOME</a>];</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structpasseggero.html#a135ebc820881eb9c1f21de662eed9893">   16</a></span>&#160;    <span class="keywordtype">char</span> cognome[<a class="code" href="costanti_8h.html#a32b09f13e00fe1f3a14c37c08588c830">LUNGHEZZA_COGNOME</a>] ;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structpasseggero.html#ada3bb755b2475dcfc18a9fdc1a277038">   17</a></span>&#160;    <a class="code" href="structdata.html">data</a> <a class="code" href="structpasseggero.html#ada3bb755b2475dcfc18a9fdc1a277038">data_di_nascita</a>;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structpasseggero.html#a197bb077177f03bd7bd0368e5b9c8647">   18</a></span>&#160;    <a class="code" href="structdata.html">data</a> <a class="code" href="structpasseggero.html#a197bb077177f03bd7bd0368e5b9c8647">data_di_iscrizione</a>;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structpasseggero.html#a528684369528c7278332209e8b022d69">   19</a></span>&#160;    <span class="keywordtype">char</span> passaporto[<a class="code" href="costanti_8h.html#aadeea3748411f923275f2744dbb26cd1">N_PASSAPORTO</a>];</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}<a class="code" href="structpasseggero.html">passeggero</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">int</span> <a class="code" href="passeggero_8h.html#a3d73ed6aca33f19e3cf49bc2dff530f3">numero_di_passeggeri</a>();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">int</span> <a class="code" href="passeggero_8h.html#a678601a8069e20df78fab0967d57e498">caricamento_persone</a>(<a class="code" href="structpasseggero.html">passeggero</a> persona[],<span class="keywordtype">int</span> numero_passeggeri);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">int</span> <a class="code" href="passeggero_8h.html#adc87dca1a22bf97ae82102eaa988bc2e">salvataggio_su_file_passeggeri</a>(<a class="code" href="structpasseggero.html">passeggero</a> persona[],<span class="keywordtype">int</span> numero_passeggeri);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">int</span> <a class="code" href="passeggero_8h.html#a5e6b6b51b305246aabd28897b6d67f5a">visualizza_passeggeri</a>(<a class="code" href="structpasseggero.html">passeggero</a> persona[],<span class="keywordtype">int</span> numero_passeggeri);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">int</span> <a class="code" href="passeggero_8h.html#a62b49218c901c6b80b0bdfeebeb599d5">visualizza_un_passeggero</a>(<a class="code" href="structpasseggero.html">passeggero</a> persona[],<span class="keywordtype">int</span> numero_passeggeri, <span class="keywordtype">int</span> indice_passeggero);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">int</span> <a class="code" href="passeggero_8h.html#a521ab37c18757bc56f66ef93ce8f7890">inserisci_nuovo_utente</a>(<a class="code" href="structpasseggero.html">passeggero</a> persona[],<span class="keywordtype">int</span> numero_passeggeri);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">int</span> <a class="code" href="passeggero_8h.html#acd1ebb9b5ff62df0eb162133cdb3f79b">modifica_utente</a>(<a class="code" href="structpasseggero.html">passeggero</a> persona[],<span class="keywordtype">int</span> numero_passeggeri);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">int</span> <a class="code" href="passeggero_8h.html#a9427c320c59b7d234a665b1ea9eb4bd9">elimina_utente</a>(<a class="code" href="structpasseggero.html">passeggero</a> persona[], <span class="keywordtype">int</span> numero_passeggeri);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">int</span> <a class="code" href="passeggero_8h.html#aa4cfbd45ca02c49cf1921d6383999583">ricerca_per_nome</a>(<a class="code" href="structpasseggero.html">passeggero</a> persona[],<span class="keywordtype">char</span> stringa[], <span class="keywordtype">int</span> numero_dei_passeggeri);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">int</span> <a class="code" href="passeggero_8h.html#ae05a2531036a7c50f267faaee1158797">ricerca_per_cognome</a>(<a class="code" href="structpasseggero.html">passeggero</a> persona[],<span class="keywordtype">char</span> stringa[], <span class="keywordtype">int</span> numero_dei_passeggeri);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">int</span> <a class="code" href="passeggero_8h.html#a2536a7c6ac4027dedfd439a260e3f804">ricerca_per_data_di_nascita</a>(<a class="code" href="structpasseggero.html">passeggero</a> persona[],<a class="code" href="structdata.html">data</a> data_ricercata,<span class="keywordtype">int</span> numero_dei_passeggeri);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">int</span> <a class="code" href="passeggero_8h.html#af20c7820b6c01db42de63dbb0d2bf385">ricerca_passeggeri</a>(<a class="code" href="structpasseggero.html">passeggero</a> persona[], <span class="keywordtype">int</span> <a class="code" href="passeggero_8h.html#a3d73ed6aca33f19e3cf49bc2dff530f3">numero_di_passeggeri</a>);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PASSEGGERO_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="passeggero_8h_html_a678601a8069e20df78fab0967d57e498"><div class="ttname"><a href="passeggero_8h.html#a678601a8069e20df78fab0967d57e498">caricamento_persone</a></div><div class="ttdeci">int caricamento_persone(passeggero persona[], int numero_passeggeri)</div><div class="ttdef"><b>Definition:</b> passeggero.c:53</div></div>
+<div class="ttc" id="passeggero_8h_html_a521ab37c18757bc56f66ef93ce8f7890"><div class="ttname"><a href="passeggero_8h.html#a521ab37c18757bc56f66ef93ce8f7890">inserisci_nuovo_utente</a></div><div class="ttdeci">int inserisci_nuovo_utente(passeggero persona[], int numero_passeggeri)</div><div class="ttdef"><b>Definition:</b> passeggero.c:150</div></div>
+<div class="ttc" id="costanti_8h_html_a32b09f13e00fe1f3a14c37c08588c830"><div class="ttname"><a href="costanti_8h.html#a32b09f13e00fe1f3a14c37c08588c830">LUNGHEZZA_COGNOME</a></div><div class="ttdeci">#define LUNGHEZZA_COGNOME</div><div class="ttdef"><b>Definition:</b> costanti.h:17</div></div>
+<div class="ttc" id="data_8h_html"><div class="ttname"><a href="data_8h.html">data.h</a></div></div>
+<div class="ttc" id="passeggero_8h_html_acd1ebb9b5ff62df0eb162133cdb3f79b"><div class="ttname"><a href="passeggero_8h.html#acd1ebb9b5ff62df0eb162133cdb3f79b">modifica_utente</a></div><div class="ttdeci">int modifica_utente(passeggero persona[], int numero_passeggeri)</div><div class="ttdef"><b>Definition:</b> passeggero.c:263</div></div>
+<div class="ttc" id="structpasseggero_html"><div class="ttname"><a href="structpasseggero.html">passeggero</a></div><div class="ttdef"><b>Definition:</b> passeggero.h:13</div></div>
+<div class="ttc" id="passeggero_8h_html_a62b49218c901c6b80b0bdfeebeb599d5"><div class="ttname"><a href="passeggero_8h.html#a62b49218c901c6b80b0bdfeebeb599d5">visualizza_un_passeggero</a></div><div class="ttdeci">int visualizza_un_passeggero(passeggero persona[], int numero_passeggeri, int indice_passeggero)</div><div class="ttdef"><b>Definition:</b> passeggero.c:132</div></div>
+<div class="ttc" id="passeggero_8h_html_a2536a7c6ac4027dedfd439a260e3f804"><div class="ttname"><a href="passeggero_8h.html#a2536a7c6ac4027dedfd439a260e3f804">ricerca_per_data_di_nascita</a></div><div class="ttdeci">int ricerca_per_data_di_nascita(passeggero persona[], data data_ricercata, int numero_dei_passeggeri)</div><div class="ttdef"><b>Definition:</b> passeggero.c:529</div></div>
+<div class="ttc" id="passeggero_8h_html_a5e6b6b51b305246aabd28897b6d67f5a"><div class="ttname"><a href="passeggero_8h.html#a5e6b6b51b305246aabd28897b6d67f5a">visualizza_passeggeri</a></div><div class="ttdeci">int visualizza_passeggeri(passeggero persona[], int numero_passeggeri)</div><div class="ttdef"><b>Definition:</b> passeggero.c:109</div></div>
+<div class="ttc" id="costanti_8h_html"><div class="ttname"><a href="costanti_8h.html">costanti.h</a></div></div>
+<div class="ttc" id="costanti_8h_html_aadeea3748411f923275f2744dbb26cd1"><div class="ttname"><a href="costanti_8h.html#aadeea3748411f923275f2744dbb26cd1">N_PASSAPORTO</a></div><div class="ttdeci">#define N_PASSAPORTO</div><div class="ttdef"><b>Definition:</b> costanti.h:21</div></div>
+<div class="ttc" id="passeggero_8h_html_aa4cfbd45ca02c49cf1921d6383999583"><div class="ttname"><a href="passeggero_8h.html#aa4cfbd45ca02c49cf1921d6383999583">ricerca_per_nome</a></div><div class="ttdeci">int ricerca_per_nome(passeggero persona[], char stringa[], int numero_dei_passeggeri)</div><div class="ttdef"><b>Definition:</b> passeggero.c:475</div></div>
+<div class="ttc" id="passeggero_8h_html_af20c7820b6c01db42de63dbb0d2bf385"><div class="ttname"><a href="passeggero_8h.html#af20c7820b6c01db42de63dbb0d2bf385">ricerca_passeggeri</a></div><div class="ttdeci">int ricerca_passeggeri(passeggero persona[], int numero_di_passeggeri)</div><div class="ttdef"><b>Definition:</b> passeggero.c:556</div></div>
+<div class="ttc" id="passeggero_8h_html_a9427c320c59b7d234a665b1ea9eb4bd9"><div class="ttname"><a href="passeggero_8h.html#a9427c320c59b7d234a665b1ea9eb4bd9">elimina_utente</a></div><div class="ttdeci">int elimina_utente(passeggero persona[], int numero_passeggeri)</div><div class="ttdef"><b>Definition:</b> passeggero.c:425</div></div>
+<div class="ttc" id="passeggero_8h_html_a3d73ed6aca33f19e3cf49bc2dff530f3"><div class="ttname"><a href="passeggero_8h.html#a3d73ed6aca33f19e3cf49bc2dff530f3">numero_di_passeggeri</a></div><div class="ttdeci">int numero_di_passeggeri()</div><div class="ttdef"><b>Definition:</b> passeggero.c:24</div></div>
+<div class="ttc" id="costanti_8h_html_a1174c9cabf872f9154fcec903a6e0395"><div class="ttname"><a href="costanti_8h.html#a1174c9cabf872f9154fcec903a6e0395">LUNGHEZZA_NOME</a></div><div class="ttdeci">#define LUNGHEZZA_NOME</div><div class="ttdef"><b>Definition:</b> costanti.h:13</div></div>
+<div class="ttc" id="passeggero_8h_html_ae05a2531036a7c50f267faaee1158797"><div class="ttname"><a href="passeggero_8h.html#ae05a2531036a7c50f267faaee1158797">ricerca_per_cognome</a></div><div class="ttdeci">int ricerca_per_cognome(passeggero persona[], char stringa[], int numero_dei_passeggeri)</div><div class="ttdef"><b>Definition:</b> passeggero.c:502</div></div>
+<div class="ttc" id="structpasseggero_html_a197bb077177f03bd7bd0368e5b9c8647"><div class="ttname"><a href="structpasseggero.html#a197bb077177f03bd7bd0368e5b9c8647">passeggero::data_di_iscrizione</a></div><div class="ttdeci">data data_di_iscrizione</div><div class="ttdef"><b>Definition:</b> passeggero.h:18</div></div>
+<div class="ttc" id="passeggero_8h_html_adc87dca1a22bf97ae82102eaa988bc2e"><div class="ttname"><a href="passeggero_8h.html#adc87dca1a22bf97ae82102eaa988bc2e">salvataggio_su_file_passeggeri</a></div><div class="ttdeci">int salvataggio_su_file_passeggeri(passeggero persona[], int numero_passeggeri)</div><div class="ttdef"><b>Definition:</b> passeggero.c:81</div></div>
+<div class="ttc" id="structpasseggero_html_a7c93d49321aca33cb2a17618006ac331"><div class="ttname"><a href="structpasseggero.html#a7c93d49321aca33cb2a17618006ac331">passeggero::id_passeggero</a></div><div class="ttdeci">int id_passeggero</div><div class="ttdef"><b>Definition:</b> passeggero.h:14</div></div>
+<div class="ttc" id="structdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> data.h:11</div></div>
+<div class="ttc" id="structpasseggero_html_ada3bb755b2475dcfc18a9fdc1a277038"><div class="ttname"><a href="structpasseggero.html#ada3bb755b2475dcfc18a9fdc1a277038">passeggero::data_di_nascita</a></div><div class="ttdeci">data data_di_nascita</div><div class="ttdef"><b>Definition:</b> passeggero.h:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

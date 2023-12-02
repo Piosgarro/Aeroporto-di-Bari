@@ -1,0 +1,414 @@
+\hypertarget{controlli__voli_8h}{}\section{Riferimenti per il file controlli\+\_\+voli.\+h}
+\label{controlli__voli_8h}\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+{\ttfamily \#include \char`\"{}data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ora.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}volo.\+h\char`\"{}}\newline
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{controlli__voli_8h_aa0bddb55afe75387da3ccc67693fe8b2}{controllo\+\_\+id\+\_\+volo} (char id\+\_\+volo\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{controlli__voli_8h_a7ce319a05aac763f2ad7a0e77c6b9b7c}{id\+\_\+volo\+\_\+inserito} (char id\+\_\+volo\mbox{[}$\,$\mbox{]}, int numero\+\_\+voli, \hyperlink{structvolo}{volo} voli\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{controlli__voli_8h_a8b5ec27b420bb8eefdcca59435dd3858}{controllo\+\_\+\+Stringa2\+\_\+volo} (char stringa2\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{controlli__voli_8h_a5b4d8953388f1d992befb5bd1865bc18}{controllo\+\_\+\+Stringa\+\_\+volo} (char stringa\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{controlli__voli_8h_a2100bf3326599ec9619d57c31a882018}{controllo\+\_\+posti} (char posti1\mbox{[}$\,$\mbox{]}, int $\ast$posti)
+\item 
+int \hyperlink{controlli__voli_8h_a3e8f394de0a76d483ec7c56f2290029f}{controllo\+\_\+giorno\+\_\+di\+\_\+volo} (char giorno1\mbox{[}$\,$\mbox{]}, int $\ast$giorno\+\_\+di\+\_\+volo)
+\item 
+int \hyperlink{controlli__voli_8h_a8ceb57a962fb3a2cddce71b8f9ab7c75}{controllo\+\_\+mese\+\_\+di\+\_\+volo} (char mese1\mbox{[}$\,$\mbox{]}, int $\ast$mese\+\_\+di\+\_\+volo)
+\item 
+int \hyperlink{controlli__voli_8h_a2901afa08f2641c484e840f1aded836e}{controllo\+\_\+anno\+\_\+di\+\_\+volo} (char anno1\mbox{[}$\,$\mbox{]}, int $\ast$anno\+\_\+di\+\_\+volo)
+\item 
+int \hyperlink{controlli__voli_8h_a649be08b9c68ee778b2ef97df90fa41e}{data\+\_\+volo\+\_\+corretta\+\_\+1} (\hyperlink{structdata}{data} giorno\+\_\+volo)
+\item 
+int \hyperlink{controlli__voli_8h_a4c7e9fa7e1a44d808e63a3c5d06c34b0}{data\+\_\+volo\+\_\+corretta\+\_\+2} (\hyperlink{structdata}{data} giorno\+\_\+volo, int giorno\+\_\+sistema, int mese\+\_\+sistema, int anno\+\_\+sistema)
+\item 
+int \hyperlink{controlli__voli_8h_a3af577ee3cc5a55a03206d1e2880b6b3}{controllo\+\_\+ora\+\_\+e\+\_\+minuti} (char ora\+\_\+e\+\_\+minuti\mbox{[}$\,$\mbox{]}, int $\ast$ora\+\_\+e\+\_\+minuti2)
+\item 
+int \hyperlink{controlli__voli_8h_a59d29298b58134ab72b24f4a7c483c65}{ora\+\_\+di\+\_\+partenza\+\_\+corretta} (\hyperlink{structora}{ora} ora\+\_\+partenza)
+\item 
+int \hyperlink{controlli__voli_8h_a5ef9c9ccdaabad554a67521e21828f51}{ora\+\_\+di\+\_\+arrivo\+\_\+corretta} (\hyperlink{structora}{ora} ora\+\_\+partenza, \hyperlink{structora}{ora} ora\+\_\+arrivo)
+\item 
+int \hyperlink{controlli__voli_8h_a8d47df4ca5e744c163a9019e832ab15f}{calcola\+\_\+durata} (\hyperlink{structora}{ora} ora\+\_\+partenza, \hyperlink{structora}{ora} ora\+\_\+arrivo)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+Libreria che contiene tutte le funzioni relative ai controlli sui voli \begin{DoxyAuthor}{Autori}
+Sgarro Vincenzo Pio, Sokoli Afrim 
+\end{DoxyAuthor}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{controlli__voli_8h_a8d47df4ca5e744c163a9019e832ab15f}\label{controlli__voli_8h_a8d47df4ca5e744c163a9019e832ab15f}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!calcola\+\_\+durata@{calcola\+\_\+durata}}
+\index{calcola\+\_\+durata@{calcola\+\_\+durata}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{calcola\+\_\+durata()}{calcola\_durata()}}
+{\footnotesize\ttfamily int calcola\+\_\+durata (\begin{DoxyParamCaption}\item[{\hyperlink{structora}{ora}}]{ora\+\_\+partenza,  }\item[{\hyperlink{structora}{ora}}]{ora\+\_\+arrivo }\end{DoxyParamCaption})}
+
+Questa funzione permette di calcolare la durata di un volo. 
+\begin{DoxyParams}{Parametri}
+{\em ora\+\_\+partenza} & vettore di struct che deve contenere l\textquotesingle{}ora di partenza. \\
+\hline
+{\em ora\+\_\+arrivo} & vettore di struct che deve contenere l\textquotesingle{}ora di arrivo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+la durata.
+\end{DoxyReturn}
+Questa funzione permette di calcolare la durata di un volo.\+Inizialmente controllo se l\textquotesingle{}ora di arrivo e\textquotesingle{} maggiore dell\textquotesingle{}ora di partenza e se i minuti di arrivo sono maggiori o uguali ai minuti di partenza. Successivamente controllo se l\textquotesingle{}ora di arrivo e\textquotesingle{} maggiore dell\textquotesingle{}ora di partenza e i minuti di arrivo sono minori dei minuti di partenza. Infine controllo il caso in cui l\textquotesingle{}ora di arrivo sia uguale all\textquotesingle{}ora di partenza e i minuti di arrivo siano maggiori dei minuti di partenza. \begin{DoxyPrecond}{Precondizione}
+ora\+\_\+partenza vettore di struct che deve contenere l\textquotesingle{}ora di partenza. 
+
+ora\+\_\+arrivo vettore di struct che deve contenere l\textquotesingle{}ora di arrivo. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Viene restituita durata. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} la durata. \mbox{\Hypertarget{controlli__voli_8h_a2901afa08f2641c484e840f1aded836e}\label{controlli__voli_8h_a2901afa08f2641c484e840f1aded836e}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!controllo\+\_\+anno\+\_\+di\+\_\+volo@{controllo\+\_\+anno\+\_\+di\+\_\+volo}}
+\index{controllo\+\_\+anno\+\_\+di\+\_\+volo@{controllo\+\_\+anno\+\_\+di\+\_\+volo}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{controllo\+\_\+anno\+\_\+di\+\_\+volo()}{controllo\_anno\_di\_volo()}}
+{\footnotesize\ttfamily int controllo\+\_\+anno\+\_\+di\+\_\+volo (\begin{DoxyParamCaption}\item[{char}]{anno1\mbox{[}$\,$\mbox{]},  }\item[{int $\ast$}]{anno\+\_\+di\+\_\+volo }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare l\textquotesingle{}anno di volo inserito dall\textquotesingle{}utente. 
+\begin{DoxyParams}{Parametri}
+{\em anno1} & vettore di char che contiene l\textquotesingle{}anno inserito dall\textquotesingle{}utente. \\
+\hline
+{\em anno\+\_\+di\+\_\+volo} & variabile che conterra\textquotesingle{} l\textquotesingle{}anno di volo convertito in intero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se l\textquotesingle{}anno di volo inserito e\textquotesingle{} corretto, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di controllare l\textquotesingle{}anno di volo inserito dall\textquotesingle{}utente. Inizialmente controllo se i caratteri inseriti dall\textquotesingle{}utente siano compresi tra 1 e 4.\+Successivamente controllo se i caratteri inseriti siano numerici. Infine controllo se l\textquotesingle{}anno inserito dall\textquotesingle{}utente sia compreso tra 2019 e 2020. \begin{DoxyPrecond}{Precondizione}
+anno1 vettore di char che deve contenere l\textquotesingle{}anno inserito, sul quale effettuo i vari controlli. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+anno\+\_\+di\+\_\+volo variabile che conterra\textquotesingle{} l\textquotesingle{}anno convertito in intero. 
+
+Viene restituito l\textquotesingle{}anno di volo. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se il giorno di volo e\textquotesingle{} inserito correttamente,0 altrimenti.
+
+Converto l\textquotesingle{}anno di volo in intero. \mbox{\Hypertarget{controlli__voli_8h_a3e8f394de0a76d483ec7c56f2290029f}\label{controlli__voli_8h_a3e8f394de0a76d483ec7c56f2290029f}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!controllo\+\_\+giorno\+\_\+di\+\_\+volo@{controllo\+\_\+giorno\+\_\+di\+\_\+volo}}
+\index{controllo\+\_\+giorno\+\_\+di\+\_\+volo@{controllo\+\_\+giorno\+\_\+di\+\_\+volo}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{controllo\+\_\+giorno\+\_\+di\+\_\+volo()}{controllo\_giorno\_di\_volo()}}
+{\footnotesize\ttfamily int controllo\+\_\+giorno\+\_\+di\+\_\+volo (\begin{DoxyParamCaption}\item[{char}]{giorno1\mbox{[}$\,$\mbox{]},  }\item[{int $\ast$}]{giorno\+\_\+di\+\_\+volo }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare il giorno di volo inserito dall\textquotesingle{}utente. 
+\begin{DoxyParams}{Parametri}
+{\em giorno1} & vettore di char che contiene il giorno inserito dall\textquotesingle{}utente. \\
+\hline
+{\em giorno\+\_\+di\+\_\+volo} & variabile che conterra\textquotesingle{} il giorno di volo convertito in intero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se il giorno di volo inserito e\textquotesingle{} corretto, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di controllare il giorno di volo inserito dall\textquotesingle{}utente. Inizialmente controllo se i caratteri inseriti dall\textquotesingle{}utente siano compresi tra 1 e 2.\+Successivamente controllo se i caratteri inseriti siano numerici. Infine controllo se il giorno inserito dall\textquotesingle{}utente sia compreso tra 1 e 31. \begin{DoxyPrecond}{Precondizione}
+giorno1 vettore di char che deve contenere il giorno inserito, sul quale effettuo i vari controlli. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+giorno\+\_\+di\+\_\+volo variabile che conterra\textquotesingle{} il giorno convertito in intero. 
+
+Il giorno di volo. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se il giorno di volo e\textquotesingle{} inserito correttamente,0 altrimenti
+
+Converto il giorno di volo in intero. \mbox{\Hypertarget{controlli__voli_8h_aa0bddb55afe75387da3ccc67693fe8b2}\label{controlli__voli_8h_aa0bddb55afe75387da3ccc67693fe8b2}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!controllo\+\_\+id\+\_\+volo@{controllo\+\_\+id\+\_\+volo}}
+\index{controllo\+\_\+id\+\_\+volo@{controllo\+\_\+id\+\_\+volo}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{controllo\+\_\+id\+\_\+volo()}{controllo\_id\_volo()}}
+{\footnotesize\ttfamily int controllo\+\_\+id\+\_\+volo (\begin{DoxyParamCaption}\item[{char}]{id\+\_\+volo\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare il codice di volo inserito . 
+\begin{DoxyParams}{Parametri}
+{\em id\+\_\+volo} & vettore di char che contiene il codice di volo inserito. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se il codice di volo inserito e\textquotesingle{} corretto, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di controllare se il codice del volo inserito e\textquotesingle{} corretto o meno.\+Inizialmente controllo se i caratteri inseriti siano diversi a 9. Successivamente controllo se i primi due caratteri inseriti siano alfabetici e siano in maiuscolo,mentre i restanti 4 siano numerici. \begin{DoxyPrecond}{Precondizione}
+id\+\_\+volo Deve contenere il codice di volo inserito. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Il codice di volo. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se il codice di volo e\textquotesingle{} inserito correttamente,0 altrimenti \mbox{\Hypertarget{controlli__voli_8h_a8ceb57a962fb3a2cddce71b8f9ab7c75}\label{controlli__voli_8h_a8ceb57a962fb3a2cddce71b8f9ab7c75}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!controllo\+\_\+mese\+\_\+di\+\_\+volo@{controllo\+\_\+mese\+\_\+di\+\_\+volo}}
+\index{controllo\+\_\+mese\+\_\+di\+\_\+volo@{controllo\+\_\+mese\+\_\+di\+\_\+volo}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{controllo\+\_\+mese\+\_\+di\+\_\+volo()}{controllo\_mese\_di\_volo()}}
+{\footnotesize\ttfamily int controllo\+\_\+mese\+\_\+di\+\_\+volo (\begin{DoxyParamCaption}\item[{char}]{mese1\mbox{[}$\,$\mbox{]},  }\item[{int $\ast$}]{mese\+\_\+di\+\_\+volo }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare il mese di volo inserito dall\textquotesingle{}utente. 
+\begin{DoxyParams}{Parametri}
+{\em mese1} & vettore di char che contiene il mese inserito dall\textquotesingle{}utente. \\
+\hline
+{\em mese\+\_\+di\+\_\+volo} & variabile che conterra\textquotesingle{} il mese di volo convertito in intero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se il mese di volo inserito e\textquotesingle{} corretto, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di controllare il mese di volo inserito dall\textquotesingle{}utente. Inizialmente controllo se i caratteri inseriti dall\textquotesingle{}utente siano compresi tra 1 e 2.\+Successivamente controllo se i caratteri inseriti siano numerici. Infine controllo se il mese inserito dall\textquotesingle{}utente sia compreso tra 1 e 12. \begin{DoxyPrecond}{Precondizione}
+mese1 vettore di char che deve contenere il mese inserito, sul quale effettuo i vari controlli. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+mese\+\_\+di\+\_\+volo variabile che conterra\textquotesingle{} il giorno convertito in intero. 
+
+Viene restituito il mese di volo. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se il mese di volo e\textquotesingle{} inserito correttamente,0 altrimenti
+
+Converto il mese di nascita in intero. \mbox{\Hypertarget{controlli__voli_8h_a3af577ee3cc5a55a03206d1e2880b6b3}\label{controlli__voli_8h_a3af577ee3cc5a55a03206d1e2880b6b3}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!controllo\+\_\+ora\+\_\+e\+\_\+minuti@{controllo\+\_\+ora\+\_\+e\+\_\+minuti}}
+\index{controllo\+\_\+ora\+\_\+e\+\_\+minuti@{controllo\+\_\+ora\+\_\+e\+\_\+minuti}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{controllo\+\_\+ora\+\_\+e\+\_\+minuti()}{controllo\_ora\_e\_minuti()}}
+{\footnotesize\ttfamily int controllo\+\_\+ora\+\_\+e\+\_\+minuti (\begin{DoxyParamCaption}\item[{char}]{ora\+\_\+e\+\_\+minuti\mbox{[}$\,$\mbox{]},  }\item[{int $\ast$}]{ora\+\_\+e\+\_\+minuti2 }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare l\textquotesingle{}ora o i minuti (sia di partenza che di arrivo) inseriti dall\textquotesingle{}utente. 
+\begin{DoxyParams}{Parametri}
+{\em ora\+\_\+e\+\_\+minuti} & vettore di char che contiene l\textquotesingle{}ora o i minuti inseriti. \\
+\hline
+{\em ora\+\_\+e\+\_\+minuti2} & variabile che conterra\textquotesingle{} l\textquotesingle{}ora o i minuti convertiti in intero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se l\textquotesingle{}ora o i minuti siano inseriti correttamente, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di controllare l\textquotesingle{}ora o i minuti (sia di partenza che di arrivo) inseriti dall\textquotesingle{}utente. Inizialmente controllo se i caratteri inseriti dall\textquotesingle{}utente siano compresi tra 1 e 2.\+Successivamente controllo se l\textquotesingle{}utente abbia inserito dei caratteri non numerici. \begin{DoxyPrecond}{Precondizione}
+ora\+\_\+e\+\_\+minuti vettore di char che deve contenere l\textquotesingle{}ora o i minuti inseriti, sul quale effettuo i vari controlli. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+ora\+\_\+e\+\_\+minuti2 variabile che conterra\textquotesingle{} l\textquotesingle{}ora o i minuti convertiti in intero. 
+
+Vengono restituiti l\textquotesingle{}ora o i minuti. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se l\textquotesingle{}ora o i minuti sono inseriti correttamente,0 altrimenti
+
+Converto l\textquotesingle{}ora o i minuti in intero. \mbox{\Hypertarget{controlli__voli_8h_a2100bf3326599ec9619d57c31a882018}\label{controlli__voli_8h_a2100bf3326599ec9619d57c31a882018}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!controllo\+\_\+posti@{controllo\+\_\+posti}}
+\index{controllo\+\_\+posti@{controllo\+\_\+posti}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{controllo\+\_\+posti()}{controllo\_posti()}}
+{\footnotesize\ttfamily int controllo\+\_\+posti (\begin{DoxyParamCaption}\item[{char}]{posti1\mbox{[}$\,$\mbox{]},  }\item[{int $\ast$}]{posti }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare il numero dei posti inseriti dall\textquotesingle{}utente. 
+\begin{DoxyParams}{Parametri}
+{\em posti1} & vettore di char che contiene il giorno inserito dall\textquotesingle{}utente. \\
+\hline
+{\em posti} & variabile che conterra\textquotesingle{} il numero dei posti convertito in intero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se il numero dei posti inserito e\textquotesingle{} corretto,0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di controllare il numero dei posti inseriti dall\textquotesingle{}utente.\+Inizialmente controllo se il numero dei caratteri inseriti dall\textquotesingle{}utente e\textquotesingle{} diverso dal massimo del numero dei caratteri,ovvero 3.\+Successivamente controllo se il numero dei posti inseriti dall\textquotesingle{}utente e\textquotesingle{} composto solo da caratteri numerici.\+Infine controllo se il numero dei posti inseriti e\textquotesingle{} compreso tra 100 e 950. \begin{DoxyPrecond}{Precondizione}
+posti1 vettore di char che deve contenere il numero dei posti inseriti,sul quale effettuo i vari controlli. 
+
+posti variabile che conterra\textquotesingle{} il numero dei posti convertito in intero. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Il numero dei posti. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se il numero dei posti e\textquotesingle{} stato inserito correttamente,0 altrimenti
+
+Converto il giorno di volo in intero. \mbox{\Hypertarget{controlli__voli_8h_a8b5ec27b420bb8eefdcca59435dd3858}\label{controlli__voli_8h_a8b5ec27b420bb8eefdcca59435dd3858}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!controllo\+\_\+\+Stringa2\+\_\+volo@{controllo\+\_\+\+Stringa2\+\_\+volo}}
+\index{controllo\+\_\+\+Stringa2\+\_\+volo@{controllo\+\_\+\+Stringa2\+\_\+volo}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{controllo\+\_\+\+Stringa2\+\_\+volo()}{controllo\_Stringa2\_volo()}}
+{\footnotesize\ttfamily int controllo\+\_\+\+Stringa2\+\_\+volo (\begin{DoxyParamCaption}\item[{char}]{stringa2\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare il nome della compagnia o la destinazione inseriti dall\textquotesingle{}utente. 
+\begin{DoxyParams}{Parametri}
+{\em stringa2} & vettore di char che contiene il nome della compagnia o la destinazione inseriti. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se il nome compagnia o destinazione inserita e\textquotesingle{} corretta, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di controllare il nome della compagnia o la destinazione,inseriti dall\textquotesingle{}utente.\+Inizialmente controllo se l\textquotesingle{}utente inserisce degli spazi prima di scrivere il nome della compagnia o la destinazione.\+Succcessivamente controllo se la stringa inserita dall\textquotesingle{}utente sia composta solo da caratteri alfabetici. Infine controllo se l\textquotesingle{}utente abbia inserito piu\textquotesingle{} di un spazio. \begin{DoxyPrecond}{Precondizione}
+stringa2 vettore di char che deve contenere il nome della compagnia o la destinazione inserita, sulla quale effettuo i vari controlli. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Il nome della compagnia o la destinazine . 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se il nome della compagnia o la destinazione siano inseriti correttamente,0 altrimenti
+
+Variabile che conterra\textquotesingle{} il numero di caratteri del nome della compagnia o della destinazione.
+
+Variabile che conta gli spazi inseriti dall\textquotesingle{}utente.
+
+Pongo il primo carattere alfabetico in maiuscolo.
+
+Delimino tutti gli eventuali spazi inseriti inizialmente dall\textquotesingle{}utente.
+
+Controllo se l\textquotesingle{}utente ha inserito eventuali spazi.
+
+Controllo se gli spazi inseriti dall\textquotesingle{}utente sono piu\textquotesingle{} di uno.
+
+Rimuovo lo ~\newline
+ e lo sovrascrivo con il terminatore di stringa \textbackslash{}0 \mbox{\Hypertarget{controlli__voli_8h_a5b4d8953388f1d992befb5bd1865bc18}\label{controlli__voli_8h_a5b4d8953388f1d992befb5bd1865bc18}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!controllo\+\_\+\+Stringa\+\_\+volo@{controllo\+\_\+\+Stringa\+\_\+volo}}
+\index{controllo\+\_\+\+Stringa\+\_\+volo@{controllo\+\_\+\+Stringa\+\_\+volo}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{controllo\+\_\+\+Stringa\+\_\+volo()}{controllo\_Stringa\_volo()}}
+{\footnotesize\ttfamily int controllo\+\_\+\+Stringa\+\_\+volo (\begin{DoxyParamCaption}\item[{char}]{stringa\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare la tipologia di aereo inserita dall\textquotesingle{}utente. 
+\begin{DoxyParams}{Parametri}
+{\em stringa} & vettore di char che contiene la tipologia di aereo inserita. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se la tipologia di aereo inserita e\textquotesingle{} corretta, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di controllare la tipologia di aereo inserita dall\textquotesingle{}utente.\+Inizialmente controllo se l\textquotesingle{}utente inserisce degli spazi prima di scrivere la tipologia di aereo.\+Succcessivamente controllo se la stringa inserita dall\textquotesingle{}utente sia composta solo da caratteri alfanumerici. Infine controllo se l\textquotesingle{}utente abbia inserito piu\textquotesingle{} di un spazio. \begin{DoxyPrecond}{Precondizione}
+stringa vettore di char che deve contenere la tipologia di aereo inserita, sulla quale effettuo i vari controlli. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+La tipologia di aereo. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se la tipologia di aereo e\textquotesingle{} inserita correttamente,0 altrimenti
+
+Variabile che conterra\textquotesingle{} il numero di caratteri del nome della tipologia di aereo.
+
+Variabile che conta gli spazi inseriti dall\textquotesingle{}utente.
+
+Pongo il primo carattere alfabetico in maiuscolo.
+
+Delimino tutti gli eventuali spazi inseriti inizialmente dall\textquotesingle{}utente.
+
+Controllo se l\textquotesingle{}utente ha inserito eventuali spazi.
+
+Controllo se gli spazi inseriti dall\textquotesingle{}utente sono piu\textquotesingle{} di uno.
+
+Rimuovo lo ~\newline
+ e lo sovrascrivo con il terminatore di stringa \textbackslash{}0 \mbox{\Hypertarget{controlli__voli_8h_a649be08b9c68ee778b2ef97df90fa41e}\label{controlli__voli_8h_a649be08b9c68ee778b2ef97df90fa41e}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!data\+\_\+volo\+\_\+corretta\+\_\+1@{data\+\_\+volo\+\_\+corretta\+\_\+1}}
+\index{data\+\_\+volo\+\_\+corretta\+\_\+1@{data\+\_\+volo\+\_\+corretta\+\_\+1}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{data\+\_\+volo\+\_\+corretta\+\_\+1()}{data\_volo\_corretta\_1()}}
+{\footnotesize\ttfamily int data\+\_\+volo\+\_\+corretta\+\_\+1 (\begin{DoxyParamCaption}\item[{\hyperlink{structdata}{data}}]{giorno\+\_\+volo }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare se la data di volo e\textquotesingle{} realistica. 
+\begin{DoxyParams}{Parametri}
+{\em giorno\+\_\+volo} & vettore di struct di tipo data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se la data di volo è realistica, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di controllare se la data di volo inserita e\textquotesingle{} realistica. Inizialmente controllo se il giorno inserito sia compreso tra 1 e 30 nel caso se il mese fosse Aprile,Giugno,Settembre,Novembre. Nel caso se il mese fosse Febbraio verifico che l\textquotesingle{}anno sia o meno bisestile. In caso positivo il massimo dei giorni sara\textquotesingle{} 29 altrimenti 28.\+In tutti gli altri mesi il massimo è 31 \begin{DoxyPrecond}{Precondizione}
+giorno\+\_\+volo vettore di struct di tipo data che deve contenere la data di volo inserita dall\textquotesingle{}utente. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Viene restituita la data di volo. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{controlli__voli_8h_a4c7e9fa7e1a44d808e63a3c5d06c34b0}\label{controlli__voli_8h_a4c7e9fa7e1a44d808e63a3c5d06c34b0}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!data\+\_\+volo\+\_\+corretta\+\_\+2@{data\+\_\+volo\+\_\+corretta\+\_\+2}}
+\index{data\+\_\+volo\+\_\+corretta\+\_\+2@{data\+\_\+volo\+\_\+corretta\+\_\+2}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{data\+\_\+volo\+\_\+corretta\+\_\+2()}{data\_volo\_corretta\_2()}}
+{\footnotesize\ttfamily int data\+\_\+volo\+\_\+corretta\+\_\+2 (\begin{DoxyParamCaption}\item[{\hyperlink{structdata}{data}}]{giorno\+\_\+volo,  }\item[{int}]{giorno\+\_\+sistema,  }\item[{int}]{mese\+\_\+sistema,  }\item[{int}]{anno\+\_\+sistema }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare se la data di volo inserita e\textquotesingle{} maggiore o uguale della data del sistema. 
+\begin{DoxyParams}{Parametri}
+{\em giorno\+\_\+volo} & vettore di struct che contiene la data di volo inserita dall\textquotesingle{}utente. \\
+\hline
+{\em giorno\+\_\+sistema} & contiene il giorno del sistema. \\
+\hline
+{\em mese\+\_\+sistema} & contiene il mese del sistema. \\
+\hline
+{\em anno\+\_\+sistema} & contiene l\textquotesingle{}anno del sistema. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se la data di volo e\textquotesingle{} maggiore o uguale della data del sistema, 0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di controllare se la data di volo inserita e\textquotesingle{} maggiore o uguale della data del sistema. Inizialmente controllo se l\textquotesingle{}anno di volo inserito dall\textquotesingle{}utente sia maggiore dell\textquotesingle{}anno di sistema.\+Nel caso caso fosse vero qualsiasi data di volo con l\textquotesingle{}anno minore del 2020 sara\textquotesingle{} corretta,altrimenti controllo se l\textquotesingle{}anno di volo sia uguale all\textquotesingle{}anno del sistema. Nel caso fosse vero controllo se il mese di volo inserito sia uguale al mese di sistema, se vero controllo se il giorno di volo inserito sia maggiore o uguale al giorno di sistema, altrimenti controllo se sia maggiore del mese di sistema. \begin{DoxyPrecond}{Precondizione}
+giorno\+\_\+volo Deve contenere la data di volo inserita dall\textquotesingle{}utente. In questa funzione viene confrontata con la data del sistema. 
+
+giorno\+\_\+sistema Deve contenere il giorno del sistema. 
+
+mese\+\_\+sistema Deve contenere il mese del sistema 
+
+anno\+\_\+sistema Deve contenere l\textquotesingle{}anno del sistema. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Viene restituita la data di volo. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{controlli__voli_8h_a7ce319a05aac763f2ad7a0e77c6b9b7c}\label{controlli__voli_8h_a7ce319a05aac763f2ad7a0e77c6b9b7c}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!id\+\_\+volo\+\_\+inserito@{id\+\_\+volo\+\_\+inserito}}
+\index{id\+\_\+volo\+\_\+inserito@{id\+\_\+volo\+\_\+inserito}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{id\+\_\+volo\+\_\+inserito()}{id\_volo\_inserito()}}
+{\footnotesize\ttfamily int id\+\_\+volo\+\_\+inserito (\begin{DoxyParamCaption}\item[{char}]{id\+\_\+volo\mbox{[}$\,$\mbox{]},  }\item[{int}]{numero\+\_\+voli,  }\item[{\hyperlink{structvolo}{volo}}]{voli\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare se il codice di volo inserito esiste gia\textquotesingle{}. 
+\begin{DoxyParams}{Parametri}
+{\em id\+\_\+volo} & vetttore di char che contiene il codice di volo inserito. \\
+\hline
+{\em numero\+\_\+voli} & Il numero di voli. \\
+\hline
+{\em voli} & vettore di struct di tipo volo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se il codice volo inserito non e\textquotesingle{} esistente,0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di controllare se il codice di volo inserito sia gia\textquotesingle{} esistente.\+Confronto il codice di volo inserito con tutti i codici di volo gia\textquotesingle{} esistenti. \begin{DoxyPrecond}{Precondizione}
+id\+\_\+volo Deve contenere il codice di volo inserito. 
+
+numero\+\_\+voli Deve contenere il numero dei voli. 
+
+voli Deve contenere tutti i codici dei voli. In questa funzione mi serve per confrontare il codice di volo inserito con ciascun codice di volo gia\textquotesingle{} esistente. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Il codice di volo 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se il codice di volo inserito non e\textquotesingle{} gia\textquotesingle{} esistente,0 altrimenti \mbox{\Hypertarget{controlli__voli_8h_a5ef9c9ccdaabad554a67521e21828f51}\label{controlli__voli_8h_a5ef9c9ccdaabad554a67521e21828f51}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!ora\+\_\+di\+\_\+arrivo\+\_\+corretta@{ora\+\_\+di\+\_\+arrivo\+\_\+corretta}}
+\index{ora\+\_\+di\+\_\+arrivo\+\_\+corretta@{ora\+\_\+di\+\_\+arrivo\+\_\+corretta}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{ora\+\_\+di\+\_\+arrivo\+\_\+corretta()}{ora\_di\_arrivo\_corretta()}}
+{\footnotesize\ttfamily int ora\+\_\+di\+\_\+arrivo\+\_\+corretta (\begin{DoxyParamCaption}\item[{\hyperlink{structora}{ora}}]{ora\+\_\+partenza,  }\item[{\hyperlink{structora}{ora}}]{ora\+\_\+arrivo }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare l\textquotesingle{}ora di arrivo inserita dall\textquotesingle{}utente. 
+\begin{DoxyParams}{Parametri}
+{\em ora\+\_\+partenza} & vettore di struct che contiene l\textquotesingle{}ora di partenza inserita dall\textquotesingle{}utente. \\
+\hline
+{\em ora\+\_\+arrivo} & vettore di struct che contiene l\textquotesingle{}ora di arrivo inserita dall\textquotesingle{}utente. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se l\textquotesingle{}ora di arrivo inserita e\textquotesingle{} corretta,0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di controllare se l\textquotesingle{}ora di arrivo inserita dall\textquotesingle{}utente e\textquotesingle{} corretta. Inizialmente controllo se l\textquotesingle{}ora di arrivo inserita e\textquotesingle{} minore di 0 o maggiore di 23 o se e\textquotesingle{} minore dell\textquotesingle{}ora di arrivo. Successivamente controllo se i minuti di arrivo inseriti sono compresi tra 0 e 59. Nel caso l\textquotesingle{}ora di arrivo e\textquotesingle{} uguale all\textquotesingle{}ora di partenza controllo che i minuti di arrivo siano maggiori dei minuti di partenza. \begin{DoxyPrecond}{Precondizione}
+ora\+\_\+partenza vettore di struct che deve contenere l\textquotesingle{}ora di partenza. 
+
+ora\+\_\+arrivo vettore di struct che deve contenere l\textquotesingle{}ora di arrivo. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+L\textquotesingle{}ora di arrivo. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se l\textquotesingle{}ora di arrivo e\textquotesingle{} inserita correttamente,0 altrimenti. \mbox{\Hypertarget{controlli__voli_8h_a59d29298b58134ab72b24f4a7c483c65}\label{controlli__voli_8h_a59d29298b58134ab72b24f4a7c483c65}} 
+\index{controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}!ora\+\_\+di\+\_\+partenza\+\_\+corretta@{ora\+\_\+di\+\_\+partenza\+\_\+corretta}}
+\index{ora\+\_\+di\+\_\+partenza\+\_\+corretta@{ora\+\_\+di\+\_\+partenza\+\_\+corretta}!controlli\+\_\+voli.\+h@{controlli\+\_\+voli.\+h}}
+\subsubsection{\texorpdfstring{ora\+\_\+di\+\_\+partenza\+\_\+corretta()}{ora\_di\_partenza\_corretta()}}
+{\footnotesize\ttfamily int ora\+\_\+di\+\_\+partenza\+\_\+corretta (\begin{DoxyParamCaption}\item[{\hyperlink{structora}{ora}}]{ora\+\_\+partenza }\end{DoxyParamCaption})}
+
+Questa funzione permette di controllare l\textquotesingle{}ora di partenza inserita dall\textquotesingle{}utente. 
+\begin{DoxyParams}{Parametri}
+{\em ora\+\_\+partenza} & vettore di struct che contiene l\textquotesingle{}ora di partenza inserita dall\textquotesingle{}utente. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se l\textquotesingle{}ora di partenza inserita e\textquotesingle{} corretta,0 altrimenti.
+\end{DoxyReturn}
+Questa funzione permette di controllare se l\textquotesingle{}ora di partenza inserita dall\textquotesingle{}utente e\textquotesingle{} corretta. Inizialmente controllo se l\textquotesingle{}ora di partenza inserita e\textquotesingle{} compresa tra 0 e 23. Se vero controllo se i minuti inseriti sono compresi tra 0 e 59. \begin{DoxyPrecond}{Precondizione}
+ora\+\_\+partenza vettore di struct che contiene l\textquotesingle{}ora di partenza inserita dall\textquotesingle{}utente.\+Viene utilizzata per effettuare controlli sull\textquotesingle{}ora e i minuti inseriti. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+L\textquotesingle{}ora di partenza. 
+\end{DoxyPostcond}
+Variabile di ritorno che conterra\textquotesingle{} 1 se l\textquotesingle{}ora di partenza e\textquotesingle{} inserita correttamente,0 altrimenti. 

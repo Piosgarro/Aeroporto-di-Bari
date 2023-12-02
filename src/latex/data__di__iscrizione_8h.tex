@@ -1,0 +1,35 @@
+\hypertarget{data__di__iscrizione_8h}{}\section{Riferimenti per il file data\+\_\+di\+\_\+iscrizione.\+h}
+\label{data__di__iscrizione_8h}\index{data\+\_\+di\+\_\+iscrizione.\+h@{data\+\_\+di\+\_\+iscrizione.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}data.\+h\char`\"{}}\newline
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{data__di__iscrizione_8h_a17e8873e7a49d56e8e0aba77912a743b}{acquisisci\+\_\+data} (\hyperlink{structdata}{data} $\ast$data\+\_\+iscrizione)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+Libreria che contiene la funzione per la data del sistema
+
+\begin{DoxyAuthor}{Autori}
+Sgarro Vincenzo Pio, Sokoli Afrim 
+\end{DoxyAuthor}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{data__di__iscrizione_8h_a17e8873e7a49d56e8e0aba77912a743b}\label{data__di__iscrizione_8h_a17e8873e7a49d56e8e0aba77912a743b}} 
+\index{data\+\_\+di\+\_\+iscrizione.\+h@{data\+\_\+di\+\_\+iscrizione.\+h}!acquisisci\+\_\+data@{acquisisci\+\_\+data}}
+\index{acquisisci\+\_\+data@{acquisisci\+\_\+data}!data\+\_\+di\+\_\+iscrizione.\+h@{data\+\_\+di\+\_\+iscrizione.\+h}}
+\subsubsection{\texorpdfstring{acquisisci\+\_\+data()}{acquisisci\_data()}}
+{\footnotesize\ttfamily void acquisisci\+\_\+data (\begin{DoxyParamCaption}\item[{\hyperlink{structdata}{data} $\ast$}]{data\+\_\+iscrizione }\end{DoxyParamCaption})}
+
+Questa funzione mi permette di prendere la data del sistema 
+\begin{DoxyParams}{Parametri}
+{\em data\+\_\+iscrizione} & conterra\textquotesingle{} la data del sistema\\
+\hline
+\end{DoxyParams}
+Questa funzione mi permette di riuscire a risalire alla data del sistema, attraverso la struct tm presente nella libreria time.\+h. \begin{DoxyPostcond}{Postcondizione}
+la funzione dovrà restituire la data del sistema, modificando i vari parametri. 
+\end{DoxyPostcond}
